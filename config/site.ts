@@ -6,13 +6,17 @@
  * from the admin panel later, move these fields into a SiteSettings
  * Prisma model and read them here via a cached lookup instead.
  */
+
+const basePath =
+  process.env.NODE_ENV === "production" ? "/AVR_ORG" : "";
+
 export const siteConfig = {
   name: "AVR Research & Development Pvt. Ltd.",
   shortName: "AVR",
   tagline: "A single home for our services, our work, and the people we work with.",
 
-  logo: "/brand/logo.png",
-  logoMark: "/brand/logo-mark.png",
+  logo: `${basePath}/brand/logo.png`,
+  logoMark: `${basePath}/brand/logo-mark.png`,
 
   address: {
     line1: "#F5, Ruby Apartments",
