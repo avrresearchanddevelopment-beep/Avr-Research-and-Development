@@ -1,0 +1,1 @@
+CREATE TYPE "ServiceAudience" AS ENUM ('GENERAL', 'STUDENT');

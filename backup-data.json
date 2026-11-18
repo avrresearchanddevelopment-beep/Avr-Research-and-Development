@@ -1,0 +1,1094 @@
+{
+  "users": [
+    {
+      "id": "cmu88uxcx0000vi147ovbbr23",
+      "name": "Admin",
+      "email": "admin@avrsofttech.com",
+      "passwordHash": "$2b$12$FrUesYPIDZosDicQQnCpX.izEA0bKUrQlvGp4uPjElMJQV0JHeslO",
+      "role": "ADMIN",
+      "isActive": true,
+      "emailVerified": null,
+      "createdAt": "2026-09-19T10:28:09.440Z",
+      "updatedAt": "2026-09-19T10:28:09.440Z"
+    },
+    {
+      "id": "cmu88uyh60001vi1470hjvoh9",
+      "name": "Test Student",
+      "email": "student@avrsofttech.com",
+      "passwordHash": "$2b$12$RcN37nfj5RnmUP39OMKAZehAH2mHL9GG4HtobQfDlsxvr67WBQpGW",
+      "role": "STUDENT",
+      "isActive": true,
+      "emailVerified": null,
+      "createdAt": "2026-09-19T10:28:10.890Z",
+      "updatedAt": "2026-09-19T10:28:10.890Z"
+    },
+    {
+      "id": "cmu88uzad0003vi14paemtjeu",
+      "name": "Test Client",
+      "email": "client@avrsofttech.com",
+      "passwordHash": "$2b$12$hQiHVhQ/wCySeqLg0VVQj.He9fdWHnJMr0Ua3ptrKmCtj/HvvOKdq",
+      "role": "CLIENT",
+      "isActive": true,
+      "emailVerified": null,
+      "createdAt": "2026-09-19T10:28:11.941Z",
+      "updatedAt": "2026-09-19T10:28:11.941Z"
+    }
+  ],
+  "studentProfiles": [
+    {
+      "id": "cmu88uyh60002vi14l1fsieli",
+      "userId": "cmu88uyh60001vi1470hjvoh9",
+      "phone": null,
+      "bio": null,
+      "createdAt": "2026-09-19T10:28:10.890Z",
+      "updatedAt": "2026-09-19T10:28:10.890Z"
+    }
+  ],
+  "clientProfiles": [
+    {
+      "id": "cmu88uzad0004vi14xyao9cfg",
+      "userId": "cmu88uzad0003vi14paemtjeu",
+      "company": null,
+      "phone": null,
+      "createdAt": "2026-09-19T10:28:11.941Z",
+      "updatedAt": "2026-09-19T10:28:11.941Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "cmu563wpd001evii46czf7h9n",
+      "title": "Custom Web Development",
+      "slug": "custom-web-development",
+      "description": "End-to-end design and development of responsive, high-performance websites and web applications tailored to your business needs.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:47:51.121Z",
+      "updatedAt": "2026-09-17T06:47:51.121Z"
+    },
+    {
+      "id": "cmu563wpp001fvii4oc6r372w",
+      "title": "Mobile App Development",
+      "slug": "mobile-app-development",
+      "description": "Native and cross-platform mobile apps for iOS and Android, from concept through App Store / Play Store launch.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:47:51.133Z",
+      "updatedAt": "2026-09-17T06:47:51.133Z"
+    },
+    {
+      "id": "cmu563wpu001gvii4bcck45nn",
+      "title": "AI & Machine Learning Solutions",
+      "slug": "ai-and-machine-learning-solutions",
+      "description": "Custom ML models, predictive analytics, and AI-powered automation built around your data and business goals.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:47:51.138Z",
+      "updatedAt": "2026-09-17T06:47:51.138Z"
+    },
+    {
+      "id": "cmu563wpy001hvii4bpk7klpw",
+      "title": "Corporate Training Programs",
+      "slug": "corporate-training-programs",
+      "description": "Hands-on technical training for teams and colleges, covering the latest tools and frameworks across web, data, and AI.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:47:51.142Z",
+      "updatedAt": "2026-09-17T06:47:51.142Z"
+    },
+    {
+      "id": "cmu563wq3001ivii4707ti45g",
+      "title": "Internship Programs",
+      "slug": "internship-programs",
+      "description": "Structured internship tracks for students, pairing real project work with mentorship across all our technology domains.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:47:51.147Z",
+      "updatedAt": "2026-09-17T06:47:51.147Z"
+    },
+    {
+      "id": "cmu5646l20000viwgxhqylmhb",
+      "title": "UI/UX Design & Prototyping",
+      "slug": "ui-ux-design-and-prototyping",
+      "description": "Wireframes, clickable prototypes, and full visual design systems for web and mobile products before a single line of production code is written.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.926Z",
+      "updatedAt": "2026-09-17T06:48:03.926Z"
+    },
+    {
+      "id": "cmu5646le0001viwgt3bud194",
+      "title": "Cloud Migration & DevOps",
+      "slug": "cloud-migration-and-devops",
+      "description": "Moving legacy infrastructure to AWS/Azure/GCP with CI/CD pipelines, containerization, and monitoring built in from day one.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.938Z",
+      "updatedAt": "2026-09-17T06:48:03.938Z"
+    },
+    {
+      "id": "cmu5646lk0002viwggieulicf",
+      "title": "Cybersecurity Audits",
+      "slug": "cybersecurity-audits",
+      "description": "Vulnerability assessments, penetration testing, and remediation plans for web applications and internal networks.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.944Z",
+      "updatedAt": "2026-09-17T06:48:03.944Z"
+    },
+    {
+      "id": "cmu5646lq0003viwgx522j1ut",
+      "title": "Data Engineering & Warehousing",
+      "slug": "data-engineering-and-warehousing",
+      "description": "ETL pipelines, data lakes, and warehouse design so your analytics team is working with clean, reliable data.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.950Z",
+      "updatedAt": "2026-09-17T06:48:03.950Z"
+    },
+    {
+      "id": "cmu5646lw0004viwgsz57nabh",
+      "title": "Blockchain & Smart Contract Development",
+      "slug": "blockchain-and-smart-contract-development",
+      "description": "Solidity smart contracts, token design, and audits for teams building on Ethereum-compatible chains.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.956Z",
+      "updatedAt": "2026-09-17T06:48:03.956Z"
+    },
+    {
+      "id": "cmu5646m40005viwgajd5peh9",
+      "title": "QA & Automated Testing",
+      "slug": "qa-and-automated-testing",
+      "description": "Test strategy, automated regression suites, and manual QA cycles to catch issues before your users do.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.964Z",
+      "updatedAt": "2026-09-17T06:48:03.964Z"
+    },
+    {
+      "id": "cmu5646m90006viwgt16w8vtk",
+      "title": "Technical SEO & Performance Audits",
+      "slug": "technical-seo-and-performance-audits",
+      "description": "Core Web Vitals, crawlability, and structured data fixes that improve both search ranking and real user experience.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.969Z",
+      "updatedAt": "2026-09-17T06:48:03.969Z"
+    },
+    {
+      "id": "cmu5646mg0007viwg3db3z20k",
+      "title": "College Curriculum Design",
+      "slug": "college-curriculum-design",
+      "description": "Custom project-based curriculum design for partner institutions, aligned with current industry tooling.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.976Z",
+      "updatedAt": "2026-09-17T06:48:03.976Z"
+    },
+    {
+      "id": "cmu5646mk0008viwgfsaesd5x",
+      "title": "Chatbot & Conversational AI",
+      "slug": "chatbot-and-conversational-ai",
+      "description": "Domain-specific chatbots built on top of LLMs, wired into your existing support or admissions workflows.",
+      "audience": "GENERAL",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.981Z",
+      "updatedAt": "2026-09-17T06:48:03.981Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "cmu563wq9001jvii49r3ptk4q",
+      "title": "AVR LMS Platform",
+      "slug": "avr-lms-platform",
+      "description": "A ready-to-deploy learning management system for institutes running technical training and certification programs.",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:47:51.153Z",
+      "updatedAt": "2026-09-17T06:47:51.153Z"
+    },
+    {
+      "id": "cmu563wqj001kvii4vs2qrx8d",
+      "title": "Project Portal Toolkit",
+      "slug": "project-portal-toolkit",
+      "description": "A white-label student project submission and evaluation portal used by partner colleges.",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:47:51.164Z",
+      "updatedAt": "2026-09-17T06:47:51.164Z"
+    },
+    {
+      "id": "cmu5646mp0009viwggzueif32",
+      "title": "Attendance & Biometric Suite",
+      "slug": "attendance-and-biometric-suite",
+      "description": "A hardware-integrated attendance system with biometric check-in, live dashboards, and parent/guardian notifications.",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.985Z",
+      "updatedAt": "2026-09-17T06:48:03.985Z"
+    },
+    {
+      "id": "cmu5646n1000aviwg6jjpon77",
+      "title": "Placement Tracker Pro",
+      "slug": "placement-tracker-pro",
+      "description": "End-to-end placement cell software: company pipelines, student readiness scoring, and offer-letter tracking.",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:03.997Z",
+      "updatedAt": "2026-09-17T06:48:03.997Z"
+    },
+    {
+      "id": "cmu5646n5000bviwg2uupwygj",
+      "title": "Exam Proctoring Toolkit",
+      "slug": "exam-proctoring-toolkit",
+      "description": "Browser-lockdown and webcam-based remote proctoring for online assessments, with a review dashboard for faculty.",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:04.001Z",
+      "updatedAt": "2026-09-17T06:48:04.001Z"
+    },
+    {
+      "id": "cmu5646nc000cviwgyqk8ilm3",
+      "title": "Alumni Network Platform",
+      "slug": "alumni-network-platform",
+      "description": "A searchable alumni directory with mentorship matching, event listings, and donation tracking for institutions.",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:04.008Z",
+      "updatedAt": "2026-09-17T06:48:04.008Z"
+    },
+    {
+      "id": "cmu5646nm000dviwgkxq56m48",
+      "title": "Campus Helpdesk Bot",
+      "slug": "campus-helpdesk-bot",
+      "description": "A ready-to-deploy support chatbot pre-trained on common student and staff queries, with human handoff.",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:04.018Z",
+      "updatedAt": "2026-09-17T06:48:04.018Z"
+    },
+    {
+      "id": "cmu5646nq000eviwg2qzxpaxc",
+      "title": "Digital Library Manager",
+      "slug": "digital-library-manager",
+      "description": "Cataloguing, checkout tracking, and e-book distribution for institutional libraries, with a student self-service portal.",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:04.022Z",
+      "updatedAt": "2026-09-17T06:48:04.022Z"
+    }
+  ],
+  "portfolioItems": [
+    {
+      "id": "cmu563wqo001lvii4th03jcgt",
+      "title": "Smart Attendance System",
+      "slug": "smart-attendance-system",
+      "description": "A facial-recognition based attendance system deployed across 3 partner campuses, cutting manual attendance time by 90%.",
+      "imageUrl": "https://picsum.photos/seed/avr-portfolio-1/800/600",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:47:51.168Z",
+      "updatedAt": "2026-09-17T06:47:51.168Z"
+    },
+    {
+      "id": "cmu563wqy001mvii4i1ia6n0u",
+      "title": "College Placement Dashboard",
+      "slug": "college-placement-dashboard",
+      "description": "A real-time analytics dashboard tracking placement statistics, company visits, and student readiness scores.",
+      "imageUrl": "https://picsum.photos/seed/avr-portfolio-2/800/600",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:47:51.178Z",
+      "updatedAt": "2026-09-17T06:47:51.178Z"
+    },
+    {
+      "id": "cmu563wr4001nvii4z0tzs5w7",
+      "title": "IoT-Based Crop Monitoring",
+      "slug": "iot-based-crop-monitoring",
+      "description": "A sensor network and mobile dashboard letting farmers monitor soil moisture, temperature, and irrigation remotely.",
+      "imageUrl": "https://picsum.photos/seed/avr-portfolio-3/800/600",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:47:51.185Z",
+      "updatedAt": "2026-09-17T06:47:51.185Z"
+    },
+    {
+      "id": "cmu5646nu000fviwghd68rcjv",
+      "title": "Hospital Bed Management System",
+      "slug": "hospital-bed-management-system",
+      "description": "A real-time bed and ward availability dashboard deployed across a 4-hospital network, cutting patient routing time significantly.",
+      "imageUrl": "https://picsum.photos/seed/avr-portfolio-4/800/600",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:04.027Z",
+      "updatedAt": "2026-09-17T06:48:04.027Z"
+    },
+    {
+      "id": "cmu5646o6000gviwgp4odpi3a",
+      "title": "Warehouse Inventory Automation",
+      "slug": "warehouse-inventory-automation",
+      "description": "A barcode + RFID inventory system integrated with an existing ERP, reducing stock discrepancies to under 1%.",
+      "imageUrl": "https://picsum.photos/seed/avr-portfolio-5/800/600",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:04.038Z",
+      "updatedAt": "2026-09-17T06:48:04.038Z"
+    },
+    {
+      "id": "cmu5646od000hviwgzdjssgxs",
+      "title": "Ride-Sharing Driver App (Case Study)",
+      "slug": "ride-sharing-driver-app-case-study",
+      "description": "A driver-side companion app with live trip routing, earnings breakdown, and offline-first data sync — currently in closed pilot, so no public screenshots yet.",
+      "imageUrl": null,
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:04.045Z",
+      "updatedAt": "2026-09-17T06:48:04.045Z"
+    },
+    {
+      "id": "cmu5646ok000iviwgaz3r03x3",
+      "title": "Municipal Waste Collection Tracker",
+      "slug": "municipal-waste-collection-tracker",
+      "description": "A GPS-based fleet tracking system for a city's waste collection trucks, with a public-facing complaint and status portal.",
+      "imageUrl": "https://picsum.photos/seed/avr-portfolio-6/800/600",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:04.052Z",
+      "updatedAt": "2026-09-17T06:48:04.052Z"
+    },
+    {
+      "id": "cmu5646oq000jviwgeywda6jb",
+      "title": "Online Exam Proctoring Rollout",
+      "slug": "online-exam-proctoring-rollout",
+      "description": "Deployment and support for remote proctoring across 15,000+ concurrent exam takers during a university's board exams.",
+      "imageUrl": "https://picsum.photos/seed/avr-portfolio-7/800/600",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:04.059Z",
+      "updatedAt": "2026-09-17T06:48:04.059Z"
+    },
+    {
+      "id": "cmu5646ox000kviwg5txkwhwm",
+      "title": "Retail Demand Forecasting Engine",
+      "slug": "retail-demand-forecasting-engine",
+      "description": "A forecasting model layered on top of a retail chain's POS data, reducing overstock by double digits within one quarter.",
+      "imageUrl": "https://picsum.photos/seed/avr-portfolio-8/800/600",
+      "isPublished": true,
+      "createdAt": "2026-09-17T06:48:04.066Z",
+      "updatedAt": "2026-09-17T06:48:04.066Z"
+    }
+  ],
+  "galleryImages": [
+    {
+      "id": "cmu563wrc001ovii4nn8wkp2k",
+      "title": "Training Session in Progress",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-0/800/600",
+      "altText": "Students in a hands-on training session",
+      "createdAt": "2026-09-17T06:47:51.192Z"
+    },
+    {
+      "id": "cmu563wri001pvii44wmerv8e",
+      "title": "Campus Workshop",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-1/800/600",
+      "altText": "AVR team conducting a workshop at a partner college",
+      "createdAt": "2026-09-17T06:47:51.198Z"
+    },
+    {
+      "id": "cmu563wrm001qvii4uzbaxywd",
+      "title": "Project Demo Day",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-2/800/600",
+      "altText": "Students presenting final projects to evaluators",
+      "createdAt": "2026-09-17T06:47:51.202Z"
+    },
+    {
+      "id": "cmu563wrq001rvii43qgvcyzz",
+      "title": "Office Team Photo",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-3/800/600",
+      "altText": "AVR Research & Development team",
+      "createdAt": "2026-09-17T06:47:51.207Z"
+    },
+    {
+      "id": "cmu5646p9000lviwg67h3eajd",
+      "title": "Hackathon Weekend",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-100/800/600",
+      "altText": "Students collaborating during an overnight hackathon",
+      "createdAt": "2026-09-17T06:48:04.078Z"
+    },
+    {
+      "id": "cmu5646pd000mviwg3w09p8e6",
+      "title": "Guest Lecture: Industry Expert",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-101/800/600",
+      "altText": "A visiting engineer giving a talk to a packed room",
+      "createdAt": "2026-09-17T06:48:04.082Z"
+    },
+    {
+      "id": "cmu5646pg000nviwge1ebunv4",
+      "title": "Internship Onboarding Day",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-102/800/600",
+      "altText": "New interns being walked through their first week",
+      "createdAt": "2026-09-17T06:48:04.084Z"
+    },
+    {
+      "id": "cmu5646pi000oviwg1zfbgvho",
+      "title": "Ribbon-Cutting: New Lab",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-103/800/600",
+      "altText": "Opening ceremony for a new hardware lab",
+      "createdAt": "2026-09-17T06:48:04.087Z"
+    },
+    {
+      "id": "cmu5646pk000pviwgmt1iofho",
+      "title": "Student Project Expo",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-104/800/600",
+      "altText": "Rows of student project booths at the annual expo",
+      "createdAt": "2026-09-17T06:48:04.089Z"
+    },
+    {
+      "id": "cmu5646pn000qviwgqhq8xa69",
+      "title": "Faculty Training Workshop",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-105/800/600",
+      "altText": "College faculty attending an AVR-run technical workshop",
+      "createdAt": "2026-09-17T06:48:04.091Z"
+    },
+    {
+      "id": "cmu5646pp000rviwggws19wk1",
+      "title": "Certificate Distribution",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-106/800/600",
+      "altText": "Students receiving completion certificates on stage",
+      "createdAt": "2026-09-17T06:48:04.093Z"
+    },
+    {
+      "id": "cmu5646ps000sviwgoirtefv7",
+      "title": "Team Off-Site",
+      "imageUrl": "https://picsum.photos/seed/avr-gallery-107/800/600",
+      "altText": "The AVR team at an outdoor off-site event",
+      "createdAt": "2026-09-17T06:48:04.096Z"
+    }
+  ],
+  "domains": [
+    {
+      "id": "cmu563whw0000vii4hjx9ii51",
+      "name": "Front-End Web Development",
+      "slug": "front-end-web-development",
+      "description": "Building everything a user sees, clicks, and interacts with on a website browser. Core tech: HTML, CSS, JavaScript, React.",
+      "logoUrl": null,
+      "isActive": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:47:50.852Z",
+      "updatedAt": "2026-09-17T06:47:50.852Z"
+    },
+    {
+      "id": "cmu563wjz0001vii469k3h32s",
+      "name": "Back-End Web Development",
+      "slug": "back-end-web-development",
+      "description": "Managing the server-side logic, databases, security, and APIs that power websites from behind the scenes. Core tech: Python (Django), Node.js, Java, SQL.",
+      "logoUrl": null,
+      "isActive": true,
+      "displayOrder": 1,
+      "createdAt": "2026-09-17T06:47:50.927Z",
+      "updatedAt": "2026-09-17T06:47:50.927Z"
+    },
+    {
+      "id": "cmu563wk40002vii4tcn808z1",
+      "name": "Mobile App Development",
+      "slug": "mobile-app-development",
+      "description": "Creating applications tailor-made for smartphones and tablets. Core tech: Swift (iOS), Kotlin (Android), Flutter (Cross-platform).",
+      "logoUrl": null,
+      "isActive": true,
+      "displayOrder": 2,
+      "createdAt": "2026-09-17T06:47:50.932Z",
+      "updatedAt": "2026-09-17T06:47:50.932Z"
+    },
+    {
+      "id": "cmu563wka0003vii404679uow",
+      "name": "Artificial Intelligence & Machine Learning",
+      "slug": "artificial-intelligence-and-machine-learning",
+      "description": "Training computer systems and algorithms to learn from data, make predictions, and mimic human intelligence. Core tech: Python, PyTorch, TensorFlow.",
+      "logoUrl": null,
+      "isActive": true,
+      "displayOrder": 3,
+      "createdAt": "2026-09-17T06:47:50.938Z",
+      "updatedAt": "2026-09-17T06:47:50.938Z"
+    },
+    {
+      "id": "cmu563wkh0004vii4dxt9v1dp",
+      "name": "Data Science & Data Analytics",
+      "slug": "data-science-and-data-analytics",
+      "description": "Sifting through, cleaning, and visualizing massive blocks of raw data to uncover trends and business insights. Core tech: Python (Pandas), R, Tableau, SQL.",
+      "logoUrl": null,
+      "isActive": true,
+      "displayOrder": 4,
+      "createdAt": "2026-09-17T06:47:50.945Z",
+      "updatedAt": "2026-09-17T06:47:50.945Z"
+    },
+    {
+      "id": "cmu563wko0005vii4xlnfb9ua",
+      "name": "Game Development",
+      "slug": "game-development",
+      "description": "Designing and programming interactive 2D and 3D video games for consoles, PCs, or phones. Core tech: C#, C++, Unity, Unreal Engine.",
+      "logoUrl": null,
+      "isActive": true,
+      "displayOrder": 5,
+      "createdAt": "2026-09-17T06:47:50.952Z",
+      "updatedAt": "2026-09-17T06:47:50.952Z"
+    },
+    {
+      "id": "cmu563wku0006vii4jbkkf7md",
+      "name": "Cybersecurity",
+      "slug": "cybersecurity",
+      "description": "Protecting digital systems, servers, confidential networks, and data programs from malicious cyber attacks and hackers. Core tech: Linux, Bash, Python, Wireshark.",
+      "logoUrl": null,
+      "isActive": true,
+      "displayOrder": 6,
+      "createdAt": "2026-09-17T06:47:50.958Z",
+      "updatedAt": "2026-09-17T06:47:50.958Z"
+    },
+    {
+      "id": "cmu563wkz0007vii4minx63qu",
+      "name": "DevOps & Cloud Computing",
+      "slug": "devops-and-cloud-computing",
+      "description": "Managing internet-based servers and automating the deployment pipeline so code updates smoothly. Core tech: AWS, Docker, Kubernetes, Jenkins.",
+      "logoUrl": null,
+      "isActive": true,
+      "displayOrder": 7,
+      "createdAt": "2026-09-17T06:47:50.964Z",
+      "updatedAt": "2026-09-17T06:47:50.964Z"
+    },
+    {
+      "id": "cmu563wl80008vii49sq882fd",
+      "name": "Embedded Systems & IoT",
+      "slug": "embedded-systems-and-iot",
+      "description": "Writing micro-software for hardware physical objects, such as smartwatches, medical devices, and robotics. Core tech: C, C++, Assembly, MicroPython.",
+      "logoUrl": null,
+      "isActive": true,
+      "displayOrder": 8,
+      "createdAt": "2026-09-17T06:47:50.972Z",
+      "updatedAt": "2026-09-17T06:47:50.972Z"
+    },
+    {
+      "id": "cmu563wle0009vii4l9n1ybi8",
+      "name": "Blockchain & Web3",
+      "slug": "blockchain-and-web3",
+      "description": "Developing decentralized applications and secure, tamper-proof transaction networks. Core tech: Solidity, Rust, Go.",
+      "logoUrl": null,
+      "isActive": true,
+      "displayOrder": 9,
+      "createdAt": "2026-09-17T06:47:50.978Z",
+      "updatedAt": "2026-09-17T06:47:50.978Z"
+    }
+  ],
+  "domainModules": [
+    {
+      "id": "cmu563wlm000bvii4pwz9a66n",
+      "domainId": "cmu563wka0003vii404679uow",
+      "module": "PROJECTS",
+      "isActive": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:47:50.986Z",
+      "updatedAt": "2026-09-17T06:47:50.986Z"
+    },
+    {
+      "id": "cmu563wmp000dvii4kp1d7vet",
+      "domainId": "cmu563wka0003vii404679uow",
+      "module": "TRAINING",
+      "isActive": true,
+      "displayOrder": 1,
+      "createdAt": "2026-09-17T06:47:51.026Z",
+      "updatedAt": "2026-09-17T06:47:51.026Z"
+    },
+    {
+      "id": "cmu563wmx000fvii4ity90b2s",
+      "domainId": "cmu563wka0003vii404679uow",
+      "module": "INTERNSHIPS",
+      "isActive": true,
+      "displayOrder": 2,
+      "createdAt": "2026-09-17T06:47:51.033Z",
+      "updatedAt": "2026-09-17T06:47:51.033Z"
+    },
+    {
+      "id": "cmu563wn3000hvii41s0zjlld",
+      "domainId": "cmu563wka0003vii404679uow",
+      "module": "WORKSHOPS",
+      "isActive": true,
+      "displayOrder": 3,
+      "createdAt": "2026-09-17T06:47:51.039Z",
+      "updatedAt": "2026-09-17T06:47:51.039Z"
+    },
+    {
+      "id": "cmu563wn7000jvii4plah4c8p",
+      "domainId": "cmu563wka0003vii404679uow",
+      "module": "RESEARCH",
+      "isActive": true,
+      "displayOrder": 4,
+      "createdAt": "2026-09-17T06:47:51.044Z",
+      "updatedAt": "2026-09-17T06:47:51.044Z"
+    },
+    {
+      "id": "cmu563wnf000lvii4xd084q5c",
+      "domainId": "cmu563whw0000vii4hjx9ii51",
+      "module": "PROJECTS",
+      "isActive": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:47:51.051Z",
+      "updatedAt": "2026-09-17T06:47:51.051Z"
+    },
+    {
+      "id": "cmu563wnj000nvii4ud18bmvg",
+      "domainId": "cmu563whw0000vii4hjx9ii51",
+      "module": "TRAINING",
+      "isActive": true,
+      "displayOrder": 1,
+      "createdAt": "2026-09-17T06:47:51.055Z",
+      "updatedAt": "2026-09-17T06:47:51.055Z"
+    },
+    {
+      "id": "cmu563wnn000pvii437flfoh6",
+      "domainId": "cmu563whw0000vii4hjx9ii51",
+      "module": "INTERNSHIPS",
+      "isActive": true,
+      "displayOrder": 2,
+      "createdAt": "2026-09-17T06:47:51.059Z",
+      "updatedAt": "2026-09-17T06:47:51.059Z"
+    },
+    {
+      "id": "cmu563wnr000rvii4cbtpnsrw",
+      "domainId": "cmu563whw0000vii4hjx9ii51",
+      "module": "WORKSHOPS",
+      "isActive": true,
+      "displayOrder": 3,
+      "createdAt": "2026-09-17T06:47:51.063Z",
+      "updatedAt": "2026-09-17T06:47:51.063Z"
+    },
+    {
+      "id": "cmu563wnw000tvii49zw9czb4",
+      "domainId": "cmu563whw0000vii4hjx9ii51",
+      "module": "RESEARCH",
+      "isActive": true,
+      "displayOrder": 4,
+      "createdAt": "2026-09-17T06:47:51.068Z",
+      "updatedAt": "2026-09-17T06:47:51.068Z"
+    },
+    {
+      "id": "cmu563wo2000vvii4627ua7dq",
+      "domainId": "cmu563wjz0001vii469k3h32s",
+      "module": "PROJECTS",
+      "isActive": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:47:51.074Z",
+      "updatedAt": "2026-09-17T06:47:51.074Z"
+    },
+    {
+      "id": "cmu563wo7000xvii4vgjertov",
+      "domainId": "cmu563wjz0001vii469k3h32s",
+      "module": "TRAINING",
+      "isActive": true,
+      "displayOrder": 1,
+      "createdAt": "2026-09-17T06:47:51.079Z",
+      "updatedAt": "2026-09-17T06:47:51.079Z"
+    },
+    {
+      "id": "cmu563wod000zvii40ehe6xy7",
+      "domainId": "cmu563wjz0001vii469k3h32s",
+      "module": "INTERNSHIPS",
+      "isActive": true,
+      "displayOrder": 2,
+      "createdAt": "2026-09-17T06:47:51.085Z",
+      "updatedAt": "2026-09-17T06:47:51.085Z"
+    },
+    {
+      "id": "cmu563woh0011vii44sht7ql8",
+      "domainId": "cmu563wjz0001vii469k3h32s",
+      "module": "WORKSHOPS",
+      "isActive": true,
+      "displayOrder": 3,
+      "createdAt": "2026-09-17T06:47:51.089Z",
+      "updatedAt": "2026-09-17T06:47:51.089Z"
+    },
+    {
+      "id": "cmu563wol0013vii4b0mzijnx",
+      "domainId": "cmu563wjz0001vii469k3h32s",
+      "module": "RESEARCH",
+      "isActive": true,
+      "displayOrder": 4,
+      "createdAt": "2026-09-17T06:47:51.093Z",
+      "updatedAt": "2026-09-17T06:47:51.093Z"
+    },
+    {
+      "id": "cmu563woq0015vii44dv5hbl6",
+      "domainId": "cmu563wkh0004vii4dxt9v1dp",
+      "module": "PROJECTS",
+      "isActive": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:47:51.098Z",
+      "updatedAt": "2026-09-17T06:47:51.098Z"
+    },
+    {
+      "id": "cmu563wou0017vii4f716jjr7",
+      "domainId": "cmu563wkh0004vii4dxt9v1dp",
+      "module": "TRAINING",
+      "isActive": true,
+      "displayOrder": 1,
+      "createdAt": "2026-09-17T06:47:51.102Z",
+      "updatedAt": "2026-09-17T06:47:51.102Z"
+    },
+    {
+      "id": "cmu563wp00019vii4k0bbqz8u",
+      "domainId": "cmu563wkh0004vii4dxt9v1dp",
+      "module": "INTERNSHIPS",
+      "isActive": true,
+      "displayOrder": 2,
+      "createdAt": "2026-09-17T06:47:51.108Z",
+      "updatedAt": "2026-09-17T06:47:51.108Z"
+    },
+    {
+      "id": "cmu563wp3001bvii470qxn0bn",
+      "domainId": "cmu563wkh0004vii4dxt9v1dp",
+      "module": "WORKSHOPS",
+      "isActive": true,
+      "displayOrder": 3,
+      "createdAt": "2026-09-17T06:47:51.111Z",
+      "updatedAt": "2026-09-17T06:47:51.111Z"
+    },
+    {
+      "id": "cmu563wp8001dvii4ohqwt26j",
+      "domainId": "cmu563wkh0004vii4dxt9v1dp",
+      "module": "RESEARCH",
+      "isActive": true,
+      "displayOrder": 4,
+      "createdAt": "2026-09-17T06:47:51.116Z",
+      "updatedAt": "2026-09-17T06:47:51.116Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "cmu56cnba001pvi3o9e2ihfxf",
+      "domainId": "cmu563wka0003vii404679uow",
+      "title": "AI-Based Resume Screener",
+      "slug": "ai-based-resume-screener",
+      "description": "A machine learning pipeline that ranks candidate resumes against a job description using NLP techniques.",
+      "technologies": [
+        "Python",
+        "spaCy",
+        "scikit-learn"
+      ],
+      "difficultyLevel": "INTERMEDIATE",
+      "level": "BTECH",
+      "durationWeeks": 6,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:38.854Z",
+      "updatedAt": "2026-09-17T06:54:38.854Z"
+    },
+    {
+      "id": "cmu56cnbu001rvi3oksf754tg",
+      "domainId": "cmu563wka0003vii404679uow",
+      "title": "Deep Learning Medical Image Classifier",
+      "slug": "deep-learning-medical-image-classifier",
+      "description": "A CNN-based classifier for detecting anomalies in X-ray images, built for a research-grade M.Tech thesis project.",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "OpenCV"
+      ],
+      "difficultyLevel": "ADVANCED",
+      "level": "MTECH",
+      "durationWeeks": 12,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:38.874Z",
+      "updatedAt": "2026-09-17T06:54:38.874Z"
+    },
+    {
+      "id": "cmu56cnc4001tvi3opjg4k9cx",
+      "domainId": "cmu563whw0000vii4hjx9ii51",
+      "title": "E-Commerce Storefront",
+      "slug": "e-commerce-storefront",
+      "description": "A full-featured e-commerce site with cart, checkout, and admin inventory management.",
+      "technologies": [
+        "React",
+        "Next.js",
+        "Tailwind CSS"
+      ],
+      "difficultyLevel": "BEGINNER",
+      "level": "BTECH",
+      "durationWeeks": 4,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:38.884Z",
+      "updatedAt": "2026-09-17T06:54:38.884Z"
+    },
+    {
+      "id": "cmu56cnca001vvi3olx7rqdr5",
+      "domainId": "cmu563wjz0001vii469k3h32s",
+      "title": "Real-Time Chat API",
+      "slug": "real-time-chat-api",
+      "description": "A scalable WebSocket-based chat backend supporting rooms, presence, and message history.",
+      "technologies": [
+        "Node.js",
+        "Socket.IO",
+        "PostgreSQL"
+      ],
+      "difficultyLevel": "INTERMEDIATE",
+      "level": "BTECH",
+      "durationWeeks": 5,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:38.890Z",
+      "updatedAt": "2026-09-17T06:54:38.890Z"
+    },
+    {
+      "id": "cmu56cnck001xvi3otxnzwe2x",
+      "domainId": "cmu563wkh0004vii4dxt9v1dp",
+      "title": "Sales Forecasting Dashboard",
+      "slug": "sales-forecasting-dashboard",
+      "description": "A time-series forecasting model with an interactive dashboard for regional sales prediction, developed as an M.Tech research project.",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Prophet",
+        "Tableau"
+      ],
+      "difficultyLevel": "ADVANCED",
+      "level": "MTECH",
+      "durationWeeks": 10,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:38.900Z",
+      "updatedAt": "2026-09-17T06:54:38.900Z"
+    },
+    {
+      "id": "cmu56col8000mvissfuw8z9j8",
+      "domainId": "cmu563wk40002vii4tcn808z1",
+      "title": "Cross-Platform Fitness Tracking App with Social Challenges",
+      "slug": "cross-platform-fitness-tracking-app-with-social-challenges",
+      "description": "A Flutter app tracking workouts, syncing with wearables, and letting friend groups run week-long fitness challenges.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "HealthKit",
+        "Google Fit"
+      ],
+      "difficultyLevel": "INTERMEDIATE",
+      "level": "BTECH",
+      "durationWeeks": 8,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:40.507Z",
+      "updatedAt": "2026-09-17T06:54:40.507Z"
+    },
+    {
+      "id": "cmu56com2000ovissxeojng1n",
+      "domainId": "cmu563wku0006vii4jbkkf7md",
+      "title": "Network Intrusion Detection System",
+      "slug": "network-intrusion-detection-system",
+      "description": "A signature and anomaly-based IDS built for a campus network, with a live alert dashboard for the security team.",
+      "technologies": [
+        "Python",
+        "Scapy",
+        "Snort"
+      ],
+      "difficultyLevel": "ADVANCED",
+      "level": "MTECH",
+      "durationWeeks": 12,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:40.538Z",
+      "updatedAt": "2026-09-17T06:54:40.538Z"
+    },
+    {
+      "id": "cmu56comv000qvisse76cecr8",
+      "domainId": "cmu563wkz0007vii4minx63qu",
+      "title": "One-Click Kubernetes Deployment Pipeline",
+      "slug": "one-click-kubernetes-deployment-pipeline",
+      "description": "A GitOps-based CI/CD pipeline that takes a repo from push to a running Kubernetes cluster with zero manual steps.",
+      "technologies": [],
+      "difficultyLevel": "ADVANCED",
+      "level": "MTECH",
+      "durationWeeks": 9,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:40.567Z",
+      "updatedAt": "2026-09-17T06:54:40.567Z"
+    },
+    {
+      "id": "cmu56conj000sviss97uqo10r",
+      "domainId": "cmu563wko0005vii4xlnfb9ua",
+      "title": "2D Platformer with Procedural Level Generation",
+      "slug": "2d-platformer-with-procedural-level-generation",
+      "description": "A Unity-based platformer where each playthrough generates a new layout using a constraint-based level generator.",
+      "technologies": [
+        "Unity",
+        "C#"
+      ],
+      "difficultyLevel": "BEGINNER",
+      "level": "BTECH",
+      "durationWeeks": 5,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:40.591Z",
+      "updatedAt": "2026-09-17T06:54:40.591Z"
+    },
+    {
+      "id": "cmu56cooc000uvissxhblujtb",
+      "domainId": "cmu563wl80008vii49sq882fd",
+      "title": "Smart Irrigation Controller",
+      "slug": "smart-irrigation-controller",
+      "description": "An ESP32-based irrigation controller that reads soil moisture and weather forecast data to schedule watering automatically.",
+      "technologies": [
+        "C++",
+        "ESP32",
+        "MQTT"
+      ],
+      "difficultyLevel": "INTERMEDIATE",
+      "level": "BTECH",
+      "durationWeeks": 6,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:40.620Z",
+      "updatedAt": "2026-09-17T06:54:40.620Z"
+    },
+    {
+      "id": "cmu56copo000wvissgy5pifu6",
+      "domainId": "cmu563wle0009vii4l9n1ybi8",
+      "title": "Decentralized Voting Platform",
+      "slug": "decentralized-voting-platform",
+      "description": "A tamper-evident voting dApp using Solidity smart contracts and a React front end, built as an M.Tech research project.",
+      "technologies": [
+        "Solidity",
+        "Hardhat",
+        "React",
+        "Ethers.js"
+      ],
+      "difficultyLevel": "ADVANCED",
+      "level": "MTECH",
+      "durationWeeks": 11,
+      "imageUrl": null,
+      "demoUrl": null,
+      "githubUrl": null,
+      "status": "PUBLISHED",
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:40.668Z",
+      "updatedAt": "2026-09-17T06:54:40.668Z"
+    }
+  ],
+  "moduleItems": [
+    {
+      "id": "cmu56cnef001zvi3o8dhaklka",
+      "module": "TRAINING",
+      "domainId": "cmu563whw0000vii4hjx9ii51",
+      "title": "Full-Stack Web Development Bootcamp",
+      "slug": "full-stack-web-development-bootcamp",
+      "description": "An 8-week intensive covering React, Node.js, and PostgreSQL, ending with a deployed capstone project.",
+      "imageUrl": null,
+      "isPublished": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:38.967Z",
+      "updatedAt": "2026-09-17T06:54:38.967Z"
+    },
+    {
+      "id": "cmu56cnf00021vi3ojh4tsdte",
+      "module": "TRAINING",
+      "domainId": "cmu563wka0003vii404679uow",
+      "title": "Machine Learning Fundamentals",
+      "slug": "machine-learning-fundamentals",
+      "description": "A hands-on introduction to supervised and unsupervised learning using Python and scikit-learn.",
+      "imageUrl": null,
+      "isPublished": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:38.988Z",
+      "updatedAt": "2026-09-17T06:54:38.988Z"
+    },
+    {
+      "id": "cmu56cnff0023vi3o7npsg594",
+      "module": "INTERNSHIPS",
+      "domainId": "cmu563wka0003vii404679uow",
+      "title": "AI/ML Summer Internship",
+      "slug": "ai-ml-summer-internship",
+      "description": "A 6-week internship where students build and deploy a real ML model under mentor guidance.",
+      "imageUrl": null,
+      "isPublished": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:39.003Z",
+      "updatedAt": "2026-09-17T06:54:39.003Z"
+    },
+    {
+      "id": "cmu56cnfw0025vi3ohytdtp73",
+      "module": "INTERNSHIPS",
+      "domainId": "cmu563whw0000vii4hjx9ii51",
+      "title": "Web Development Internship",
+      "slug": "web-development-internship",
+      "description": "A project-based internship building production-style web applications with a small team.",
+      "imageUrl": null,
+      "isPublished": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:39.020Z",
+      "updatedAt": "2026-09-17T06:54:39.020Z"
+    },
+    {
+      "id": "cmu56cng70027vi3ogo1yvyly",
+      "module": "WORKSHOPS",
+      "domainId": "cmu563wjz0001vii469k3h32s",
+      "title": "API Design Workshop",
+      "slug": "api-design-workshop",
+      "description": "A one-day workshop on REST API design principles, authentication, and documentation practices.",
+      "imageUrl": null,
+      "isPublished": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:39.031Z",
+      "updatedAt": "2026-09-17T06:54:39.031Z"
+    },
+    {
+      "id": "cmu56cngq0029vi3ooqgi56fr",
+      "module": "WORKSHOPS",
+      "domainId": "cmu563wkh0004vii4dxt9v1dp",
+      "title": "Data Visualization Workshop",
+      "slug": "data-visualization-workshop",
+      "description": "A hands-on session on turning raw datasets into clear, decision-ready dashboards.",
+      "imageUrl": null,
+      "isPublished": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:39.050Z",
+      "updatedAt": "2026-09-17T06:54:39.050Z"
+    },
+    {
+      "id": "cmu56cngw002bvi3og82bwiy6",
+      "module": "RESEARCH",
+      "domainId": "cmu563wka0003vii404679uow",
+      "title": "Applied NLP Research Track",
+      "slug": "applied-nlp-research-track",
+      "description": "A guided research track for students exploring transformer-based NLP applications.",
+      "imageUrl": null,
+      "isPublished": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:39.057Z",
+      "updatedAt": "2026-09-17T06:54:39.057Z"
+    },
+    {
+      "id": "cmu56cnhd002dvi3o22f2xw4f",
+      "module": "RESEARCH",
+      "domainId": "cmu563wkh0004vii4dxt9v1dp",
+      "title": "Predictive Analytics Research Track",
+      "slug": "predictive-analytics-research-track",
+      "description": "A research track focused on forecasting methods applied to real-world business datasets.",
+      "imageUrl": null,
+      "isPublished": true,
+      "displayOrder": 0,
+      "createdAt": "2026-09-17T06:54:39.073Z",
+      "updatedAt": "2026-09-17T06:54:39.073Z"
+    }
+  ]
+}
