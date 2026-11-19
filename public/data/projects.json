@@ -1,85 +1,86 @@
 [
   {
-    "id": "proj-01",
-    "slug": "tri-modal-interview-automation-agent",
-    "title": "Tri-Modal Interview Automation Agent",
+    "id": "proj-1",
+    "slug": "interview-automation-agent",
+    "title": "Intelligent Integrated Software Agent for Interview Automation (D9)",
     "domainSlug": "artificial-intelligence-and-machine-learning",
     "domainLabel": "AI & Machine Learning",
+    "section": "AVR R&D / IT Track",
+    "batchNo": "D9",
     "status": "Active R&D",
-    "summary": "Automated candidate screening and structured response evaluation pipeline combining NLP skill extraction, rubric scoring, and analytics.",
-    "stack": [
-      "Python",
-      "PyTorch",
-      "NLP",
-      "FastAPI",
-      "Next.js"
-    ],
-    "metrics": "Structured rubric scoring + automated skill matching"
+    "existingSystem": "Static screening & basic audio/text heuristics",
+    "proposedSystem": "Tri-modal cross-attention, knowledge-graph probing & explainable scoring",
+    "summary": "Multi-modal candidate evaluation agent combining resume skill extraction, adaptive questioning, and rubric-based response assessment.",
+    "stack": ["Python", "NLP", "PyTorch", "Next.js"]
   },
   {
-    "id": "proj-02",
-    "slug": "intelligent-document-understanding-rag",
-    "title": "Intelligent Document Understanding & RAG Pipeline",
+    "id": "proj-2",
+    "slug": "rag-distilbert-polysemy",
+    "title": "RAG-Enhanced DistilBERT for Contextual Polysemy in News Titles (D2)",
     "domainSlug": "artificial-intelligence-and-machine-learning",
     "domainLabel": "AI & Machine Learning",
-    "status": "Production Pilot",
-    "summary": "Retrieval-augmented document intelligence system for parsing dense technical reports, academic records, and compliance documents.",
-    "stack": [
-      "LLM",
-      "RAG",
-      "Embeddings",
-      "Vector Search",
-      "TypeScript"
-    ],
-    "metrics": "Context-grounded citation & entity extraction"
+    "section": "AVR R&D / IT Track",
+    "batchNo": "D2",
+    "status": "Active R&D",
+    "existingSystem": "Standalone short-text classifiers without external context",
+    "proposedSystem": "Dense retrieval context augmentation + fine-tuned DistilBERT disambiguation",
+    "summary": "Disambiguates polysemous terms in headlines by retrieving relevant context snippets and classifying word sense.",
+    "stack": ["DistilBERT", "RAG", "Embeddings", "Python"]
   },
   {
-    "id": "proj-03",
-    "slug": "hybrid-blockchain-academic-credentials",
-    "title": "Hybrid Blockchain Academic & EHR Security Framework",
+    "id": "proj-3",
+    "slug": "hybrid-blockchain-academic-certs",
+    "title": "Blockchain-Based Hybrid Academic Certificate Management System",
     "domainSlug": "back-end-web-development",
-    "domainLabel": "Back-End & Security",
-    "status": "Research Prototype",
-    "summary": "Dual-layer verification architecture pairing off-chain storage with verifiable on-chain proofs and role-aware access policies.",
-    "stack": [
-      "Web3",
-      "Smart Contracts",
-      "IPFS",
-      "Access Control"
-    ],
-    "metrics": "Tamper-evident credential & audit verification"
+    "domainLabel": "Back-End & Blockchain",
+    "section": "IT Section B",
+    "batchNo": "1",
+    "status": "In Progress",
+    "existingSystem": "Centralized record verification with manual auditing",
+    "proposedSystem": "Ganache, Web3, Ethereum, IPFS & ZK-SNARKs verification",
+    "summary": "Decentralized academic credential issuance and verification using off-chain storage and cryptographic proofs.",
+    "stack": ["Ethereum", "Web3", "IPFS", "ZK-SNARKs"]
   },
   {
-    "id": "proj-04",
-    "slug": "enterprise-web-rbac-platform",
-    "title": "Modular R&D Portal & Static Catalog Architecture",
-    "domainSlug": "front-end-web-development",
-    "domainLabel": "Front-End Engineering",
-    "status": "Deployed",
-    "summary": "High-speed static-exportable Next.js and Tailwind web platform designed for R&D showcases, programs, and custom domain hosting.",
-    "stack": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS"
-    ],
-    "metrics": "18 static routes prerendered with zero server runtime"
+    "id": "proj-4",
+    "slug": "blockchain-distributed-cloud-access",
+    "title": "Blockchain Integrated Secure Access Control for Distributed Cloud",
+    "domainSlug": "back-end-web-development",
+    "domainLabel": "Back-End & Blockchain",
+    "section": "IT Section B",
+    "batchNo": "2",
+    "status": "In Progress",
+    "existingSystem": "Baseline blockchain access rules",
+    "proposedSystem": "ZK-SNARKs, Web3 & dual-chain authentication",
+    "summary": "Fine-grained, verifiable access control across distributed cloud nodes with dual-chain authentication.",
+    "stack": ["Web3", "Dual-Chain", "ZK-SNARKs", "Cloud Security"]
   },
   {
-    "id": "proj-05",
-    "slug": "predictive-analytics-telemetry-suite",
-    "title": "Predictive Analytics & Operational Telemetry Suite",
+    "id": "proj-5",
+    "slug": "eeg-visual-classification-reconstruction",
+    "title": "Deep Learning for EEG-Based Visual Classification and Reconstruction",
     "domainSlug": "data-science-and-data-analytics",
-    "domainLabel": "Data Science & Analytics",
-    "status": "Case Study",
-    "summary": "End-to-end data ingestion, feature engineering, and anomaly/forecasting workflows built for operational and academic datasets.",
-    "stack": [
-      "Python",
-      "Pandas",
-      "Scikit-Learn",
-      "SQL",
-      "Visualization"
-    ],
-    "metrics": "Automated cohort & metric tracking across batches"
+    "domainLabel": "Data Science & Signals",
+    "section": "IT Section B",
+    "batchNo": "4",
+    "status": "In Progress",
+    "existingSystem": "GAN, LSTM, CNN baselines",
+    "proposedSystem": "VGG16 + AlexNet feature & reconstruction pipeline",
+    "summary": "Extracts neural patterns from EEG signals to classify and reconstruct visual stimulus representations.",
+    "stack": ["EEG", "VGG16", "AlexNet", "Deep Learning"]
+  },
+  {
+    "id": "proj-6",
+    "slug": "contactless-glucose-mmwave-tinyml",
+    "title": "Contactless Glucose Sensing Using mm-Wave Radar & TinyML",
+    "domainSlug": "data-science-and-data-analytics",
+    "domainLabel": "Data Science & Signals",
+    "section": "IT Section B",
+    "batchNo": "16",
+    "status": "In Progress",
+    "existingSystem": "CNN signal classification baseline",
+    "proposedSystem": "RAG + LLM assisted interpretation & sensing pipeline",
+    "summary": "Non-invasive physiological sensing workflow pairing radar/signal features with structured analytical reporting.",
+    "stack": ["mm-Wave", "TinyML", "CNN", "RAG + LLM"]
   }
 ]
