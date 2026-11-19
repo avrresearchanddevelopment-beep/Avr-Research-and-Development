@@ -1,0 +1,82 @@
+{
+  "internships": [
+    {
+      "id": "int-01",
+      "title": "Applied AI & LLM Engineering Internship",
+      "domain": "AI & Machine Learning",
+      "duration": "8–12 Weeks",
+      "mode": "Hybrid / Remote",
+      "summary": "Build end-to-end NLP, RAG, and evaluation pipelines with weekly code and architecture reviews."
+    },
+    {
+      "id": "int-02",
+      "title": "Full-Stack Web & UI Systems Internship",
+      "domain": "Front-End & Back-End",
+      "duration": "8 Weeks",
+      "mode": "Hybrid / Remote",
+      "summary": "Ship responsive React/Next.js interfaces, reusable component systems, and clean data integrations."
+    },
+    {
+      "id": "int-03",
+      "title": "Data Analytics & Applied Research Internship",
+      "domain": "Data Science",
+      "duration": "8 Weeks",
+      "mode": "Hybrid / Remote",
+      "summary": "Work on dataset curation, exploratory analysis, model benchmarking, and technical documentation."
+    }
+  ],
+  "research": [
+    {
+      "id": "res-01",
+      "title": "Multi-Modal & Rubric-Guided Candidate Assessment",
+      "domain": "AI & NLP",
+      "duration": "Ongoing Track",
+      "mode": "R&D Publication",
+      "summary": "Investigating structured skill extraction, semantic alignment, and explainable scoring rubrics."
+    },
+    {
+      "id": "res-02",
+      "title": "Hybrid Blockchain & Privacy-Preserving Verification",
+      "domain": "Security & Systems",
+      "duration": "Ongoing Track",
+      "mode": "R&D Publication",
+      "summary": "Exploring verifiable credentials, access control models, and integrity checks for sensitive records."
+    }
+  ],
+  "training": [
+    {
+      "id": "trn-01",
+      "title": "Python, Data Structures & Applied ML Bootcamp",
+      "domain": "AI & Machine Learning",
+      "duration": "6 Weeks",
+      "mode": "Cohort Training",
+      "summary": "Practical hands-on sessions covering Python workflows, ML fundamentals, and model evaluation."
+    },
+    {
+      "id": "trn-02",
+      "title": "Modern Web Development with React & Next.js",
+      "domain": "Web Engineering",
+      "duration": "6 Weeks",
+      "mode": "Cohort Training",
+      "summary": "Component architecture, state management, Tailwind styling, and static/cloud deployment."
+    }
+  ],
+  "workshops": [
+    {
+      "id": "wrk-01",
+      "title": "Building RAG & AI Assistants from Scratch",
+      "domain": "Generative AI",
+      "duration": "2-Day Intensive",
+      "mode": "Hands-On Lab",
+      "summary": "Practical workshop on chunking, embeddings, retrieval quality, and structured outputs."
+    },
+    {
+      "id": "wrk-02",
+      "title": "Git, GitHub Actions & Custom Domain Deployment",
+      "domain": "DevOps & Web",
+      "duration": "1-Day Intensive",
+      "mode": "Hands-On Lab",
+      "summary": "Automate static site builds with GitHub Actions and connect a custom .com domain cleanly."
+    }
+  ]
+}

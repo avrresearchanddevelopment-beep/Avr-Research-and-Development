@@ -1,0 +1,85 @@
+[
+  {
+    "id": "proj-01",
+    "slug": "tri-modal-interview-automation-agent",
+    "title": "Tri-Modal Interview Automation Agent",
+    "domainSlug": "artificial-intelligence-and-machine-learning",
+    "domainLabel": "AI & Machine Learning",
+    "status": "Active R&D",
+    "summary": "Automated candidate screening and structured response evaluation pipeline combining NLP skill extraction, rubric scoring, and analytics.",
+    "stack": [
+      "Python",
+      "PyTorch",
+      "NLP",
+      "FastAPI",
+      "Next.js"
+    ],
+    "metrics": "Structured rubric scoring + automated skill matching"
+  },
+  {
+    "id": "proj-02",
+    "slug": "intelligent-document-understanding-rag",
+    "title": "Intelligent Document Understanding & RAG Pipeline",
+    "domainSlug": "artificial-intelligence-and-machine-learning",
+    "domainLabel": "AI & Machine Learning",
+    "status": "Production Pilot",
+    "summary": "Retrieval-augmented document intelligence system for parsing dense technical reports, academic records, and compliance documents.",
+    "stack": [
+      "LLM",
+      "RAG",
+      "Embeddings",
+      "Vector Search",
+      "TypeScript"
+    ],
+    "metrics": "Context-grounded citation & entity extraction"
+  },
+  {
+    "id": "proj-03",
+    "slug": "hybrid-blockchain-academic-credentials",
+    "title": "Hybrid Blockchain Academic & EHR Security Framework",
+    "domainSlug": "back-end-web-development",
+    "domainLabel": "Back-End & Security",
+    "status": "Research Prototype",
+    "summary": "Dual-layer verification architecture pairing off-chain storage with verifiable on-chain proofs and role-aware access policies.",
+    "stack": [
+      "Web3",
+      "Smart Contracts",
+      "IPFS",
+      "Access Control"
+    ],
+    "metrics": "Tamper-evident credential & audit verification"
+  },
+  {
+    "id": "proj-04",
+    "slug": "enterprise-web-rbac-platform",
+    "title": "Modular R&D Portal & Static Catalog Architecture",
+    "domainSlug": "front-end-web-development",
+    "domainLabel": "Front-End Engineering",
+    "status": "Deployed",
+    "summary": "High-speed static-exportable Next.js and Tailwind web platform designed for R&D showcases, programs, and custom domain hosting.",
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "metrics": "18 static routes prerendered with zero server runtime"
+  },
+  {
+    "id": "proj-05",
+    "slug": "predictive-analytics-telemetry-suite",
+    "title": "Predictive Analytics & Operational Telemetry Suite",
+    "domainSlug": "data-science-and-data-analytics",
+    "domainLabel": "Data Science & Analytics",
+    "status": "Case Study",
+    "summary": "End-to-end data ingestion, feature engineering, and anomaly/forecasting workflows built for operational and academic datasets.",
+    "stack": [
+      "Python",
+      "Pandas",
+      "Scikit-Learn",
+      "SQL",
+      "Visualization"
+    ],
+    "metrics": "Automated cohort & metric tracking across batches"
+  }
+]

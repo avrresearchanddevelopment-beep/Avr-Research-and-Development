@@ -1,5 +1,11 @@
-
 import { ModulePage } from "@/components/public/ModulePage";
+
 export default function Page() {
-  return <ModulePage title="Training" description="Industry-aligned technical training and capability development programs." />;
+  return (
+    <ModulePage
+      title="Training"
+      description="Structured technical bootcamps and practical skill-building cohorts."
+      moduleKey="training"
+    />
+  );
 }

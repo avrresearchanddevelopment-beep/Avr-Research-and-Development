@@ -1,0 +1,35 @@
+[
+  {
+    "id": "prd-01",
+    "name": "AVR EvalEngine",
+    "tag": "AI Assessment Suite",
+    "summary": "Resume parsing, role-skill alignment, and rubric-based response scoring module for structured technical evaluations.",
+    "highlights": [
+      "Skill taxonomy extraction",
+      "Role match scoring",
+      "JSON/CSV export ready"
+    ]
+  },
+  {
+    "id": "prd-02",
+    "name": "AVR DocPulse",
+    "tag": "Document Intelligence",
+    "summary": "Structured extraction and search toolkit for turning multi-page PDFs, papers, and reports into actionable summaries.",
+    "highlights": [
+      "Section-aware chunking",
+      "Schema-validated outputs",
+      "Fast batch processing"
+    ]
+  },
+  {
+    "id": "prd-03",
+    "name": "AVR StaticShowcase",
+    "tag": "Web Starter Kit",
+    "summary": "Static-first Next.js catalog template with JSON-backed pages, domain filters, and GitHub Actions deployment.",
+    "highlights": [
+      "GitHub Pages compatible",
+      "Custom .com domain ready",
+      "Zero backend cost"
+    ]
+  }
+]
