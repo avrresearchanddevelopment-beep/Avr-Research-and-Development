@@ -1,27 +1,27 @@
 [
   {
-    "id": "srv-01",
+    "id": "srv-1",
     "title": "Custom AI & Machine Learning Solutions",
     "category": "Enterprise R&D",
     "deliverable": "Prototype to Deployment Blueprint",
     "description": "Applied ML, NLP, computer vision, and RAG workflows tailored to domain data, evaluation metrics, and real-world constraints."
   },
   {
-    "id": "srv-02",
+    "id": "srv-2",
     "title": "Full-Stack & Static Web Engineering",
     "category": "Web & Cloud",
     "deliverable": "Responsive Production Web Apps",
     "description": "Modern Next.js, React, and API architectures engineered for speed, maintainability, and clean custom-domain deployment."
   },
   {
-    "id": "srv-03",
+    "id": "srv-3",
     "title": "Academic & Capstone R&D Mentorship",
     "category": "Academic & Student",
     "deliverable": "Architecture, Implementation & Documentation",
     "description": "Structured guidance on problem formulation, baseline vs. proposed system design, experimentation, and technical reporting."
   },
   {
-    "id": "srv-04",
+    "id": "srv-4",
     "title": "Data Pipelines & Spreadsheet/CSV Automation",
     "category": "Data & Operations",
     "deliverable": "Structured Datasets & Reporting Workflows",

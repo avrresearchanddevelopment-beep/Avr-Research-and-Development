@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import productsData from "../../../public/data/products.json";
+import { products as productsData } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "Products",
+  description:
+    "Software products and toolkits built by AVR Research & Development.",
+};
+
 
 export default function ProductsPage() {
   return (

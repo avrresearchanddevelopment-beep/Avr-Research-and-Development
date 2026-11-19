@@ -1,0 +1,10 @@
+﻿Type,Title,Domain,Duration,Mode,Summary,Published
+internships,Applied AI & LLM Engineering Internship,AI & Machine Learning,8–12 Weeks,Hybrid / Remote,"Build end-to-end NLP, RAG, and evaluation pipelines with weekly code and architecture reviews.",yes
+internships,Full-Stack Web & UI Systems Internship,Front-End & Back-End,8 Weeks,Hybrid / Remote,"Ship responsive React/Next.js interfaces, reusable component systems, and clean data integrations.",yes
+internships,Data Analytics & Applied Research Internship,Data Science,8 Weeks,Hybrid / Remote,"Work on dataset curation, exploratory analysis, model benchmarking, and technical documentation.",yes
+research,Multi-Modal & Rubric-Guided Candidate Assessment,AI & NLP,Ongoing Track,R&D Publication,"Investigating structured skill extraction, semantic alignment, and explainable scoring rubrics.",yes
+research,Hybrid Blockchain & Privacy-Preserving Verification,Security & Systems,Ongoing Track,R&D Publication,"Exploring verifiable credentials, access control models, and integrity checks for sensitive records.",yes
+training,"Python, Data Structures & Applied ML Bootcamp",AI & Machine Learning,6 Weeks,Cohort Training,"Practical hands-on sessions covering Python workflows, ML fundamentals, and model evaluation.",yes
+training,Modern Web Development with React & Next.js,Web Engineering,6 Weeks,Cohort Training,"Component architecture, state management, Tailwind styling, and static/cloud deployment.",yes
+workshops,Building RAG & AI Assistants from Scratch,Generative AI,2-Day Intensive,Hands-On Lab,"Practical workshop on chunking, embeddings, retrieval quality, and structured outputs.",yes
+workshops,"Git, GitHub Actions & Custom Domain Deployment",DevOps & Web,1-Day Intensive,Hands-On Lab,Automate static site builds with GitHub Actions and connect a custom .com domain cleanly.,yes

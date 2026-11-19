@@ -1,0 +1,4 @@
+﻿Client,Title,Outcome,Tags,Published
+AVR R&D Flagship Lab,Automated Technical Screening & Rubric Scoring,Standardized candidate skill extraction and multi-criteria answer evaluation.,"NLP, Python, Evaluation",yes
+Engineering Cohort & Batch Programs,Multi-Domain Capstone & Research Tracking,"Organized AI/ML, Web, Data Science, and Security initiatives with clear milestones.","R&D, Mentorship, Analytics",yes
+AVR Digital Presence,Static Web Publishing with Custom Domain Support,Fast static prerendering with automated GitHub Actions builds on every push.,"Next.js, GitHub Actions, Static Export",yes

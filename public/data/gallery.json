@@ -1,30 +1,30 @@
 [
   {
-    "id": "gal-01",
+    "id": "gal-1",
     "title": "AVR Research & Development Identity",
     "caption": "Official brand mark and R&D identity assets.",
     "image": "/brand/logo.png",
     "tag": "Branding"
   },
   {
-    "id": "gal-02",
+    "id": "gal-2",
     "title": "AVR Emblem & Mark",
     "caption": "Compact emblem used across digital channels and documentation.",
     "image": "/brand/logo-mark.png",
     "tag": "Identity"
   },
   {
-    "id": "gal-03",
+    "id": "gal-3",
     "title": "R&D Showcase Visual 01",
     "caption": "Visual asset from AVR project and lab media collection.",
-    "image": "/uploads/601895e7-eb2e-4eb8-8bf9-acc3e00faeeb.webp",
+    "image": "/gallery/601895e7-eb2e-4eb8-8bf9-acc3e00faeeb.webp",
     "tag": "Lab Media"
   },
   {
-    "id": "gal-04",
+    "id": "gal-4",
     "title": "R&D Showcase Visual 02",
     "caption": "Engineering & innovation visual showcase.",
-    "image": "/uploads/84c6f7d2-9b1a-47da-8911-94c45606c825.webp",
+    "image": "/gallery/84c6f7d2-9b1a-47da-8911-94c45606c825.webp",
     "tag": "Showcase"
   }
 ]

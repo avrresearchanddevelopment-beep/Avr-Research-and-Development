@@ -1,4 +1,12 @@
-import portfolioData from "../../../public/data/portfolio.json";
+import type { Metadata } from "next";
+import { portfolio as portfolioData } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "Portfolio",
+  description:
+    "Selected client work and outcomes from AVR Research & Development.",
+};
+
 
 export default function PortfolioPage() {
   return (

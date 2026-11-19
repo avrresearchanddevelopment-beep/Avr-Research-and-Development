@@ -7,8 +7,11 @@ const exploreLinks = [
   { href: "/about", label: "About Us" },
   { href: "/projects", label: "Projects" },
   { href: "/services", label: "Services" },
+  { href: "/products", label: "Products" },
   { href: "/training", label: "Training" },
+  { href: "/internships", label: "Internships" },
   { href: "/faq", label: "FAQ" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Footer() {

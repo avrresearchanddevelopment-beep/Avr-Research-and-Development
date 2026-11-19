@@ -2,9 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import modulesData from "../../public/data/modules.json";
-
-type ModuleKey = keyof typeof modulesData;
+import { modules, type ModuleKey } from "@/lib/data";
 
 interface ModulePageProps {
   title: string;
@@ -23,7 +21,7 @@ export function ModulePage({ title, description, moduleKey }: ModulePageProps) {
       ? "workshops"
       : "internships");
 
-  const items = modulesData[inferredKey] || modulesData.internships;
+  const items = modules[inferredKey] ?? [];
   const domains = ["All", ...Array.from(new Set(items.map((i) => i.domain)))];
   const [selectedDomain, setSelectedDomain] = useState("All");
 
@@ -60,6 +58,13 @@ export function ModulePage({ title, description, moduleKey }: ModulePageProps) {
           ))}
         </div>
 
+        {items.length === 0 && (
+          <p className="text-center text-sm text-slate-500">
+            New {title.toLowerCase()} programs are being announced soon.{" "}
+            <Link href="/contact" className="font-semibold text-teal-700">Contact us</Link> for details.
+          </p>
+        )}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {visibleItems.map((item) => (
             <div
@@ -78,7 +83,7 @@ export function ModulePage({ title, description, moduleKey }: ModulePageProps) {
               </div>
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                 <span className="text-slate-500">{item.mode}</span>
-                <Link href="/contact" className="font-semibold text-teal-700 hover:text-teal-800">
+                <Link href={`/contact/?subject=${encodeURIComponent(`${title}: ${item.title}`)}`} className="font-semibold text-teal-700 hover:text-teal-800">
                   Apply / Enquire →
                 </Link>
               </div>

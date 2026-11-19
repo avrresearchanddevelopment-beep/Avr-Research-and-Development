@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ContactForm } from "@/components/public/ContactForm";
 import { siteConfig } from "@/config/site";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Reach AVR Research & Development in Hyderabad - phone, email, address and enquiry form.",
+};
+
 
 const CONTACT_DETAILS = [
   {
@@ -31,7 +40,9 @@ export default function ContactPage() {
         <div>
           <h2 className="font-display text-lg text-ink">Send a message</h2>
           <div className="mt-6">
+            <Suspense fallback={null}>
             <ContactForm />
+          </Suspense>
           </div>
         </div>
 

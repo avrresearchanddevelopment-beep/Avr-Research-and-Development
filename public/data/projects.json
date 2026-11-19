@@ -1,86 +1,128 @@
 [
   {
     "id": "proj-1",
-    "slug": "interview-automation-agent",
+    "slug": "intelligent-integrated-software-agent-for-interview-automation-d9",
     "title": "Intelligent Integrated Software Agent for Interview Automation (D9)",
-    "domainSlug": "artificial-intelligence-and-machine-learning",
+    "domainSlug": "ai-and-machine-learning",
     "domainLabel": "AI & Machine Learning",
+    "level": "B.Tech",
     "section": "AVR R&D / IT Track",
     "batchNo": "D9",
     "status": "Active R&D",
     "existingSystem": "Static screening & basic audio/text heuristics",
     "proposedSystem": "Tri-modal cross-attention, knowledge-graph probing & explainable scoring",
     "summary": "Multi-modal candidate evaluation agent combining resume skill extraction, adaptive questioning, and rubric-based response assessment.",
-    "stack": ["Python", "NLP", "PyTorch", "Next.js"]
+    "stack": [
+      "Python",
+      "NLP",
+      "PyTorch",
+      "Next.js"
+    ],
+    "link": ""
   },
   {
     "id": "proj-2",
-    "slug": "rag-distilbert-polysemy",
+    "slug": "rag-enhanced-distilbert-for-contextual-polysemy-in-news-titles-d2",
     "title": "RAG-Enhanced DistilBERT for Contextual Polysemy in News Titles (D2)",
-    "domainSlug": "artificial-intelligence-and-machine-learning",
+    "domainSlug": "ai-and-machine-learning",
     "domainLabel": "AI & Machine Learning",
+    "level": "B.Tech",
     "section": "AVR R&D / IT Track",
     "batchNo": "D2",
     "status": "Active R&D",
     "existingSystem": "Standalone short-text classifiers without external context",
     "proposedSystem": "Dense retrieval context augmentation + fine-tuned DistilBERT disambiguation",
     "summary": "Disambiguates polysemous terms in headlines by retrieving relevant context snippets and classifying word sense.",
-    "stack": ["DistilBERT", "RAG", "Embeddings", "Python"]
+    "stack": [
+      "DistilBERT",
+      "RAG",
+      "Embeddings",
+      "Python"
+    ],
+    "link": ""
   },
   {
     "id": "proj-3",
-    "slug": "hybrid-blockchain-academic-certs",
+    "slug": "blockchain-based-hybrid-academic-certificate-management-system",
     "title": "Blockchain-Based Hybrid Academic Certificate Management System",
-    "domainSlug": "back-end-web-development",
+    "domainSlug": "back-end-and-blockchain",
     "domainLabel": "Back-End & Blockchain",
+    "level": "B.Tech",
     "section": "IT Section B",
     "batchNo": "1",
     "status": "In Progress",
     "existingSystem": "Centralized record verification with manual auditing",
     "proposedSystem": "Ganache, Web3, Ethereum, IPFS & ZK-SNARKs verification",
     "summary": "Decentralized academic credential issuance and verification using off-chain storage and cryptographic proofs.",
-    "stack": ["Ethereum", "Web3", "IPFS", "ZK-SNARKs"]
+    "stack": [
+      "Ethereum",
+      "Web3",
+      "IPFS",
+      "ZK-SNARKs"
+    ],
+    "link": ""
   },
   {
     "id": "proj-4",
-    "slug": "blockchain-distributed-cloud-access",
+    "slug": "blockchain-integrated-secure-access-control-for-distributed-cloud",
     "title": "Blockchain Integrated Secure Access Control for Distributed Cloud",
-    "domainSlug": "back-end-web-development",
+    "domainSlug": "back-end-and-blockchain",
     "domainLabel": "Back-End & Blockchain",
+    "level": "B.Tech",
     "section": "IT Section B",
     "batchNo": "2",
     "status": "In Progress",
     "existingSystem": "Baseline blockchain access rules",
     "proposedSystem": "ZK-SNARKs, Web3 & dual-chain authentication",
     "summary": "Fine-grained, verifiable access control across distributed cloud nodes with dual-chain authentication.",
-    "stack": ["Web3", "Dual-Chain", "ZK-SNARKs", "Cloud Security"]
+    "stack": [
+      "Web3",
+      "Dual-Chain",
+      "ZK-SNARKs",
+      "Cloud Security"
+    ],
+    "link": ""
   },
   {
     "id": "proj-5",
-    "slug": "eeg-visual-classification-reconstruction",
+    "slug": "deep-learning-for-eeg-based-visual-classification-and-reconstruction",
     "title": "Deep Learning for EEG-Based Visual Classification and Reconstruction",
-    "domainSlug": "data-science-and-data-analytics",
+    "domainSlug": "data-science-and-signals",
     "domainLabel": "Data Science & Signals",
+    "level": "B.Tech",
     "section": "IT Section B",
     "batchNo": "4",
     "status": "In Progress",
     "existingSystem": "GAN, LSTM, CNN baselines",
     "proposedSystem": "VGG16 + AlexNet feature & reconstruction pipeline",
     "summary": "Extracts neural patterns from EEG signals to classify and reconstruct visual stimulus representations.",
-    "stack": ["EEG", "VGG16", "AlexNet", "Deep Learning"]
+    "stack": [
+      "EEG",
+      "VGG16",
+      "AlexNet",
+      "Deep Learning"
+    ],
+    "link": ""
   },
   {
     "id": "proj-6",
-    "slug": "contactless-glucose-mmwave-tinyml",
+    "slug": "contactless-glucose-sensing-using-mm-wave-radar-and-tinyml",
     "title": "Contactless Glucose Sensing Using mm-Wave Radar & TinyML",
-    "domainSlug": "data-science-and-data-analytics",
+    "domainSlug": "data-science-and-signals",
     "domainLabel": "Data Science & Signals",
+    "level": "B.Tech",
     "section": "IT Section B",
     "batchNo": "16",
     "status": "In Progress",
     "existingSystem": "CNN signal classification baseline",
     "proposedSystem": "RAG + LLM assisted interpretation & sensing pipeline",
     "summary": "Non-invasive physiological sensing workflow pairing radar/signal features with structured analytical reporting.",
-    "stack": ["mm-Wave", "TinyML", "CNN", "RAG + LLM"]
+    "stack": [
+      "mm-Wave",
+      "TinyML",
+      "CNN",
+      "RAG + LLM"
+    ],
+    "link": ""
   }
 ]

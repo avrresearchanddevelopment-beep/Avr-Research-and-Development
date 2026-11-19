@@ -1,1 +1,0 @@
-ALTER TABLE "services" ADD COLUMN IF NOT EXISTS "audience" "ServiceAudience" NOT NULL DEFAULT 'GENERAL';

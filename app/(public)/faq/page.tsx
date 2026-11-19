@@ -25,17 +25,17 @@ const FAQS: { question: string; answer: string }[] = [
   {
     question: "How do students sign up?",
     answer:
-      "Use the Student link in the site header to register or sign in. You can browse the available project domains before signing in.",
+      "Browse Projects, Training, Internships and Workshops, then use the Contact page (or call us) to enquire. We will confirm batch dates and fees directly.",
   },
   {
     question: "How do clients get started?",
     answer:
-      "Use the Client link in the site header to create an account, or send us a message through the Contact page and we will get back to you.",
+      "Send us a message through the Contact page or call us, tell us what you need, and we will get back to you with a plan and timeline.",
   },
   {
     question: "What happens after I send a message?",
     answer:
-      "Your message is saved and our team reads it from the admin dashboard. Include your email address and, if you like, a phone number so we can reach you.",
+      "Our team reads every message and replies by email or phone. Include your email address and, if you like, a phone number so we can reach you.",
   },
 ];
 

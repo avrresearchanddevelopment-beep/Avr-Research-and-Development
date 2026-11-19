@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import servicesData from "../../../public/data/services.json";
+import { services as servicesData } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description:
+    "R&D and engineering services: custom AI/ML, full-stack web, academic mentorship and data pipelines.",
+};
+
 
 export default function ServicesPage() {
   return (

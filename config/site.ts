@@ -2,15 +2,28 @@
  * Organization / company details shown across the public site
  * (header contact bar, footer, contact page, structured metadata, etc).
  *
- * This is a static config file for now. If this needs to become editable
- * from the admin panel later, move these fields into a SiteSettings
- * Prisma model and read them here via a cached lookup instead.
+ * Static config - edit here and push to redeploy.
  */
 
-const basePath =
-  process.env.NODE_ENV === "production" ? "/AVR_ORG" : "";
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+/** Prefix a root-relative path (e.g. "/gallery/a.webp") with the base path.
+ *  Absolute URLs (https://...) are returned untouched. */
+export function withBase(src: string): string {
+  if (!src || /^(https?:)?\/\//i.test(src) || src.startsWith("data:")) return src;
+  const clean = src.startsWith("/") ? src : `/${src}`;
+  return `${basePath}${clean}`;
+}
 
 export const siteConfig = {
+  // Public site URL (used by sitemap/robots). Set NEXT_PUBLIC_SITE_URL in the
+  // GitHub Action to https://your-domain.com
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, ""),
+
+  // Contact form backend (Formspree / Web3Forms / Google Apps Script URL).
+  // If empty, the form falls back to opening the visitor's email app.
+  formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "",
+
   name: "AVR Research & Development Pvt. Ltd.",
   shortName: "AVR",
   tagline: "A single home for our services, our work, and the people we work with.",

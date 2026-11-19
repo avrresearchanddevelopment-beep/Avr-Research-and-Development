@@ -1,0 +1,4 @@
+﻿Name,Tag,Summary,Highlights,Published
+AVR EvalEngine,AI Assessment Suite,"Resume parsing, role-skill alignment, and rubric-based response scoring module for structured technical evaluations.",Skill taxonomy extraction; Role match scoring; JSON/CSV export ready,yes
+AVR DocPulse,Document Intelligence,"Structured extraction and search toolkit for turning multi-page PDFs, papers, and reports into actionable summaries.",Section-aware chunking; Schema-validated outputs; Fast batch processing,yes
+AVR StaticShowcase,Web Starter Kit,"Static-first Next.js catalog template with JSON-backed pages, domain filters, and GitHub Actions deployment.",GitHub Pages compatible; Custom .com domain ready; Zero backend cost,yes

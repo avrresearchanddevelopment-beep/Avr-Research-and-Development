@@ -1,4 +1,13 @@
-import galleryData from "../../../public/data/gallery.json";
+import type { Metadata } from "next";
+import { gallery as galleryData } from "@/lib/data";
+import { withBase } from "@/config/site";
+
+export const metadata: Metadata = {
+  title: "Gallery",
+  description:
+    "Brand visuals, lab highlights and showcase assets from AVR R&D.",
+};
+
 
 export default function GalleryPage() {
   return (
@@ -23,8 +32,10 @@ export default function GalleryPage() {
               className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm"
             >
               <div className="h-48 bg-slate-100 flex items-center justify-center overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={item.image}
+                  src={withBase(item.image)}
+                  loading="lazy"
                   alt={item.title}
                   className="w-full h-full object-cover"
                 />

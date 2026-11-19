@@ -1,20 +1,13 @@
-﻿export const dynamic = 'force-static';
+export const dynamic = 'force-static';
 import type { MetadataRoute } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+import { siteConfig } from "@/config/site";
+
+const baseUrl = siteConfig.url;
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-      disallow: [
-        "/api/",
-        "/admin/dashboard",
-        "/student/dashboard",
-        "/client/dashboard",
-      ],
-    },
+    rules: { userAgent: "*", allow: "/" },
     sitemap: `${baseUrl}/sitemap.xml`,
   };
 }

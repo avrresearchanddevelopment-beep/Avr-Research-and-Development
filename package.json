@@ -1,25 +1,22 @@
 {
-  "name": "avr-platform",
+  "name": "avr-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
+    "sync": "node scripts/sync-sheets.mjs",
     "build": "next build",
-    "start": "next start",
+    "build:live": "node scripts/sync-sheets.mjs && next build",
+    "typecheck": "next typegen && tsc --noEmit",
     "lint": "eslint"
   },
   "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "dotenv": "^17.4.2",
-    "jose": "^6.2.10",
     "next": "16.3.4",
     "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "zod": "^4.5.4"
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.3.3",
-    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",

@@ -1,6 +1,6 @@
 [
   {
-    "id": "prd-01",
+    "id": "prd-1",
     "name": "AVR EvalEngine",
     "tag": "AI Assessment Suite",
     "summary": "Resume parsing, role-skill alignment, and rubric-based response scoring module for structured technical evaluations.",
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "id": "prd-02",
+    "id": "prd-2",
     "name": "AVR DocPulse",
     "tag": "Document Intelligence",
     "summary": "Structured extraction and search toolkit for turning multi-page PDFs, papers, and reports into actionable summaries.",
@@ -22,7 +22,7 @@
     ]
   },
   {
-    "id": "prd-03",
+    "id": "prd-3",
     "name": "AVR StaticShowcase",
     "tag": "Web Starter Kit",
     "summary": "Static-first Next.js catalog template with JSON-backed pages, domain filters, and GitHub Actions deployment.",

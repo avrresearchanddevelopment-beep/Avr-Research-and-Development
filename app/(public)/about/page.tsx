@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "About AVR Research & Development Pvt. Ltd. - an innovation-driven technology company in Hyderabad, established in 2021.",
+};
+
 const POINTS = [
   "Real-time applications, custom software and innovative project development",
   "Responsive, user-friendly and professional websites for businesses and institutions",
