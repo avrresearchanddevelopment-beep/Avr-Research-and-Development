@@ -128,3 +128,28 @@ select:focus-visible,
 }
 .card h2 + p,
 .card h3 + p { margin-top: 0.6rem; }
+
+
+/* AVR Responsive Multi-Device Rules */
+html, body {
+  max-width: 100%;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, video, svg {
+  max-width: 100%;
+}
+
+/* Smooth readable scaling for large monitors & 4K TVs */
+@media (min-width: 1920px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 20px;
+  }
+}
