@@ -1,0 +1,624 @@
+{
+ "ok": true,
+ "updatedAt": "2026-11-19T07:03:27+00:00",
+ "tabs": {
+  "settings": {
+   "site_name": "AVR Research & Development Pvt. Ltd.",
+   "tagline": "A single home for our services, our work, and the people we work with.",
+   "slogan": "Innovating Today, Empowering Tomorrow",
+   "cta_label": "Enquire",
+   "logo_url": "",
+   "hero_badge": "AVR Research & Development",
+   "hero_title_1": "Intelligent Solutions",
+   "hero_title_2": "Engineered for Tomorrow",
+   "hero_subtitle": "We pioneer multi-modal AI systems and enterprise-grade frameworks to solve complex industry challenges, and help students ship real projects.",
+   "hero_button_1_label": "Explore our projects",
+   "hero_button_1_url": "/projects",
+   "hero_button_2_label": "Our services",
+   "hero_button_2_url": "/services",
+   "features_eyebrow": "What we do",
+   "features_title": "Research that ships",
+   "mobile_1": "7997129566",
+   "mobile_2": "9951129566",
+   "landline": "+91-4079643677",
+   "email": "avr@avrreasearchanddevelopment.com",
+   "address": "F5, Ruby Apartments, Opp Maitri Vanam, Pillar No-1464, Hyderabad.",
+   "footer_address": "#F5, Ruby Apartments | Opp Maitri Vanam | Near Pillar No. 1464 | Hyderabad.",
+   "hours": "Mon – Sat, 9:30 AM to 7:00 PM",
+   "privacy_url": "",
+   "terms_url": "",
+   "contact_eyebrow": "Contact Us",
+   "contact_title": "Get in touch",
+   "contact_subtitle": "Questions about a project, training, or internship? Reach out and we'll get back to you.",
+   "contact_success_title": "Thanks for reaching out.",
+   "contact_success_text": "We've received your message and will get back to you soon.",
+   "about_eyebrow": "About Us",
+   "about_title": "About AVR Research & Development Pvt Ltd",
+   "faq_eyebrow": "FAQ",
+   "faq_title": "Frequently asked questions",
+   "projects_eyebrow": "AVR Research & Development",
+   "projects_title": "R&D Initiatives & Case Studies",
+   "projects_subtitle": "Explore active research tracks, engineering systems, and applied solutions built at AVR.",
+   "services_eyebrow": "Capabilities & Offerings",
+   "services_title": "R&D & Engineering Services",
+   "services_subtitle": "Practical engineering, applied AI prototyping, and structured technical guidance.",
+   "products_eyebrow": "Platforms & Toolkits",
+   "products_title": "AVR Products & Frameworks",
+   "products_subtitle": "Reusable modules and frameworks engineered for evaluation, document intelligence, and web delivery.",
+   "portfolio_eyebrow": "Selected Work",
+   "portfolio_title": "AVR Portfolio & Outcomes",
+   "portfolio_subtitle": "Key implementations and technical tracks delivered across research, tooling, and web platforms.",
+   "gallery_eyebrow": "Visual Archive",
+   "gallery_title": "AVR Gallery",
+   "gallery_subtitle": "Brand visuals, lab highlights, and showcase assets from AVR Research & Development.",
+   "programs_eyebrow": "AVR Programs & Tracks",
+   "training_title": "Training",
+   "training_subtitle": "Structured technical bootcamps and practical skill-building cohorts.",
+   "internships_title": "Internships",
+   "internships_subtitle": "Hands-on R&D internship programs across AI, web engineering, and data analytics.",
+   "workshops_title": "Workshops",
+   "workshops_subtitle": "Focused lab sessions on applied AI, automation, and static web deployment.",
+   "research_title": "Research",
+   "research_subtitle": "Applied research tracks, experimental frameworks, and technical publications."
+  },
+  "navigation": [
+   {
+    "label": "Home",
+    "path": "/",
+    "show": "Yes",
+    "inFooter": "No",
+    "order": "1"
+   },
+   {
+    "label": "About",
+    "path": "/about",
+    "show": "Yes",
+    "inFooter": "Yes",
+    "order": "2"
+   },
+   {
+    "label": "Projects",
+    "path": "/projects",
+    "show": "Yes",
+    "inFooter": "Yes",
+    "order": "3"
+   },
+   {
+    "label": "Services",
+    "path": "/services",
+    "show": "Yes",
+    "inFooter": "Yes",
+    "order": "4"
+   },
+   {
+    "label": "Products",
+    "path": "/products",
+    "show": "Yes",
+    "inFooter": "No",
+    "order": "5"
+   },
+   {
+    "label": "Portfolio",
+    "path": "/portfolio",
+    "show": "Yes",
+    "inFooter": "No",
+    "order": "6"
+   },
+   {
+    "label": "Gallery",
+    "path": "/gallery",
+    "show": "Yes",
+    "inFooter": "No",
+    "order": "7"
+   },
+   {
+    "label": "Contact",
+    "path": "/contact",
+    "show": "Yes",
+    "inFooter": "No",
+    "order": "13"
+   }
+  ],
+  "highlights": [
+   {
+    "title": "Streamlined Interview Automation",
+    "description": "Intelligent, integrated software agents using tri-modal cross-attention fusion for real-time candidate evaluation.",
+    "icon": "mic",
+    "order": "1",
+    "published": "Yes"
+   },
+   {
+    "title": "Intelligent Document Understanding",
+    "description": "AI-based systems designed to extract, analyze, and structure complex enterprise data autonomously.",
+    "icon": "document",
+    "order": "2",
+    "published": "Yes"
+   },
+   {
+    "title": "Blockchain EHR Security",
+    "description": "Dual-layered hybrid blockchain architectures securing Electronic Health Records with AI-enabled data analysis.",
+    "icon": "chip",
+    "order": "3",
+    "published": "Yes"
+   }
+  ],
+  "about": [
+   {
+    "type": "Paragraph",
+    "text": "AVR Research and Development Pvt. Ltd. is an innovation-driven technology company established in 2021, committed to delivering advanced, reliable, and intelligent technological solutions. We specialize in real-time project development, software engineering, website design and development, hardware development, Internet of Things (IoT) solutions, and research-oriented technical services.",
+    "order": "1",
+    "published": "Yes"
+   },
+   {
+    "type": "Paragraph",
+    "text": "Our company focuses on transforming innovative ideas into practical, efficient, and scalable solutions that address real-world challenges. We combine technical expertise, creativity, and research-driven methodologies to develop customized solutions for students, academic institutions, researchers, startups, and businesses.",
+    "order": "2",
+    "published": "Yes"
+   },
+   {
+    "type": "Paragraph",
+    "text": "At AVR Research and Development Pvt. Ltd., we believe that technology and innovation are the driving forces behind a smarter future. Our mission is to bridge the gap between ideas and implementation through quality development, continuous research, and emerging technologies.",
+    "order": "3",
+    "published": "Yes"
+   },
+   {
+    "type": "Paragraph",
+    "text": "We are dedicated to building long-term relationships with our clients by delivering excellence, maintaining professional standards, and providing technology solutions that create meaningful impact.",
+    "order": "4",
+    "published": "Yes"
+   },
+   {
+    "type": "Point",
+    "text": "Real-time applications, custom software and innovative project development",
+    "order": "5",
+    "published": "Yes"
+   },
+   {
+    "type": "Point",
+    "text": "Responsive, user-friendly and professional websites for businesses and institutions",
+    "order": "6",
+    "published": "Yes"
+   },
+   {
+    "type": "Point",
+    "text": "Embedded systems, smart devices, sensors, automation and IoT-based solutions",
+    "order": "7",
+    "published": "Yes"
+   },
+   {
+    "type": "Point",
+    "text": "Technical research, AI & ML projects, innovative prototypes and research-oriented development",
+    "order": "8",
+    "published": "Yes"
+   }
+  ],
+  "faq": [
+   {
+    "question": "What does AVR offer?",
+    "answer": "Our current offerings are listed under Services, Products and Portfolio. Programmes for students are under Projects, Training, Internships, Workshops and Research.",
+    "order": "1",
+    "published": "Yes"
+   },
+   {
+    "question": "How can I get in touch?",
+    "answer": "Call 7997129566, email avr@avrreasearchanddevelopment.com, or use the contact form. Our hours are Mon – Sat, 9:30 AM to 7:00 PM.",
+    "order": "2",
+    "published": "Yes"
+   },
+   {
+    "question": "Where are you located?",
+    "answer": "F5, Ruby Apartments, Opp Maitri Vanam, Pillar No-1464, Hyderabad.",
+    "order": "3",
+    "published": "Yes"
+   },
+   {
+    "question": "How do students enrol?",
+    "answer": "Open the Contact page (or press the Enquire button on any project or programme), tell us which project or programme you want, and our team will contact you.",
+    "order": "4",
+    "published": "Yes"
+   },
+   {
+    "question": "How do clients get started?",
+    "answer": "Send us a message through the Contact page and we will get back to you.",
+    "order": "5",
+    "published": "Yes"
+   },
+   {
+    "question": "What happens after I send a message?",
+    "answer": "Your message reaches our team directly. Include your email address and, if you like, a phone number so we can reach you.",
+    "order": "6",
+    "published": "Yes"
+   }
+  ],
+  "domains": [
+   {
+    "name": "AI & Machine Learning",
+    "description": "",
+    "order": "1",
+    "published": "Yes"
+   },
+   {
+    "name": "Back-End & Blockchain",
+    "description": "",
+    "order": "2",
+    "published": "Yes"
+   },
+   {
+    "name": "Data Science & Signals",
+    "description": "",
+    "order": "3",
+    "published": "Yes"
+   },
+   {
+    "name": "Front-End Engineering",
+    "description": "",
+    "order": "4",
+    "published": "Yes"
+   },
+   {
+    "name": "Back-End & Security",
+    "description": "",
+    "order": "5",
+    "published": "Yes"
+   },
+   {
+    "name": "Data Science & Analytics",
+    "description": "",
+    "order": "6",
+    "published": "Yes"
+   }
+  ],
+  "projects": [
+   {
+    "title": "Intelligent Integrated Software Agent for Interview Automation (D9)",
+    "slug": "interview-automation-agent",
+    "domain": "AI & Machine Learning",
+    "level": "",
+    "summary": "Multi-modal candidate evaluation agent combining resume skill extraction, adaptive questioning, and rubric-based response assessment.",
+    "existingSystem": "Static screening & basic audio/text heuristics",
+    "proposedSystem": "Tri-modal cross-attention, knowledge-graph probing & explainable scoring",
+    "stack": "Python, NLP, PyTorch, Next.js",
+    "outcome": "",
+    "projectStatus": "Active R&D",
+    "batchNo": "D9",
+    "imageUrl": "",
+    "demoUrl": "",
+    "githubUrl": "",
+    "price": "",
+    "order": "1",
+    "published": "Yes"
+   },
+   {
+    "title": "RAG-Enhanced DistilBERT for Contextual Polysemy in News Titles (D2)",
+    "slug": "rag-distilbert-polysemy",
+    "domain": "AI & Machine Learning",
+    "level": "",
+    "summary": "Disambiguates polysemous terms in headlines by retrieving relevant context snippets and classifying word sense.",
+    "existingSystem": "Standalone short-text classifiers without external context",
+    "proposedSystem": "Dense retrieval context augmentation + fine-tuned DistilBERT disambiguation",
+    "stack": "DistilBERT, RAG, Embeddings, Python",
+    "outcome": "",
+    "projectStatus": "Active R&D",
+    "batchNo": "D2",
+    "imageUrl": "",
+    "demoUrl": "",
+    "githubUrl": "",
+    "price": "",
+    "order": "2",
+    "published": "Yes"
+   },
+   {
+    "title": "Blockchain-Based Hybrid Academic Certificate Management System",
+    "slug": "hybrid-blockchain-academic-certs",
+    "domain": "Back-End & Blockchain",
+    "level": "",
+    "summary": "Decentralized academic credential issuance and verification using off-chain storage and cryptographic proofs.",
+    "existingSystem": "Centralized record verification with manual auditing",
+    "proposedSystem": "Ganache, Web3, Ethereum, IPFS & ZK-SNARKs verification",
+    "stack": "Ethereum, Web3, IPFS, ZK-SNARKs",
+    "outcome": "",
+    "projectStatus": "In Progress",
+    "batchNo": "1",
+    "imageUrl": "",
+    "demoUrl": "",
+    "githubUrl": "",
+    "price": "",
+    "order": "3",
+    "published": "Yes"
+   },
+   {
+    "title": "Blockchain Integrated Secure Access Control for Distributed Cloud",
+    "slug": "blockchain-distributed-cloud-access",
+    "domain": "Back-End & Blockchain",
+    "level": "",
+    "summary": "Fine-grained, verifiable access control across distributed cloud nodes with dual-chain authentication.",
+    "existingSystem": "Baseline blockchain access rules",
+    "proposedSystem": "ZK-SNARKs, Web3 & dual-chain authentication",
+    "stack": "Web3, Dual-Chain, ZK-SNARKs, Cloud Security",
+    "outcome": "",
+    "projectStatus": "In Progress",
+    "batchNo": "2",
+    "imageUrl": "",
+    "demoUrl": "",
+    "githubUrl": "",
+    "price": "",
+    "order": "4",
+    "published": "Yes"
+   },
+   {
+    "title": "Deep Learning for EEG-Based Visual Classification and Reconstruction",
+    "slug": "eeg-visual-classification-reconstruction",
+    "domain": "Data Science & Signals",
+    "level": "",
+    "summary": "Extracts neural patterns from EEG signals to classify and reconstruct visual stimulus representations.",
+    "existingSystem": "GAN, LSTM, CNN baselines",
+    "proposedSystem": "VGG16 + AlexNet feature & reconstruction pipeline",
+    "stack": "EEG, VGG16, AlexNet, Deep Learning",
+    "outcome": "",
+    "projectStatus": "In Progress",
+    "batchNo": "4",
+    "imageUrl": "",
+    "demoUrl": "",
+    "githubUrl": "",
+    "price": "",
+    "order": "5",
+    "published": "Yes"
+   },
+   {
+    "title": "Contactless Glucose Sensing Using mm-Wave Radar & TinyML",
+    "slug": "contactless-glucose-mmwave-tinyml",
+    "domain": "Data Science & Signals",
+    "level": "",
+    "summary": "Non-invasive physiological sensing workflow pairing radar/signal features with structured analytical reporting.",
+    "existingSystem": "CNN signal classification baseline",
+    "proposedSystem": "RAG + LLM assisted interpretation & sensing pipeline",
+    "stack": "mm-Wave, TinyML, CNN, RAG + LLM",
+    "outcome": "",
+    "projectStatus": "In Progress",
+    "batchNo": "16",
+    "imageUrl": "",
+    "demoUrl": "",
+    "githubUrl": "",
+    "price": "",
+    "order": "6",
+    "published": "Yes"
+   }
+  ],
+  "programs": [
+   {
+    "type": "Training",
+    "title": "Python, Data Structures & Applied ML Bootcamp",
+    "domain": "AI & Machine Learning",
+    "duration": "6 Weeks",
+    "mode": "Cohort Training",
+    "summary": "Practical hands-on sessions covering Python workflows, ML fundamentals, and model evaluation.",
+    "imageUrl": "",
+    "applyLink": "",
+    "order": "1",
+    "published": "Yes"
+   },
+   {
+    "type": "Training",
+    "title": "Modern Web Development with React & Next.js",
+    "domain": "Web Engineering",
+    "duration": "6 Weeks",
+    "mode": "Cohort Training",
+    "summary": "Component architecture, state management, Tailwind styling, and static/cloud deployment.",
+    "imageUrl": "",
+    "applyLink": "",
+    "order": "2",
+    "published": "Yes"
+   },
+   {
+    "type": "Internships",
+    "title": "Applied AI & LLM Engineering Internship",
+    "domain": "AI & Machine Learning",
+    "duration": "8–12 Weeks",
+    "mode": "Hybrid / Remote",
+    "summary": "Build end-to-end NLP, RAG, and evaluation pipelines with weekly code and architecture reviews.",
+    "imageUrl": "",
+    "applyLink": "",
+    "order": "3",
+    "published": "Yes"
+   },
+   {
+    "type": "Internships",
+    "title": "Full-Stack Web & UI Systems Internship",
+    "domain": "Front-End & Back-End",
+    "duration": "8 Weeks",
+    "mode": "Hybrid / Remote",
+    "summary": "Ship responsive React/Next.js interfaces, reusable component systems, and clean data integrations.",
+    "imageUrl": "",
+    "applyLink": "",
+    "order": "4",
+    "published": "Yes"
+   },
+   {
+    "type": "Internships",
+    "title": "Data Analytics & Applied Research Internship",
+    "domain": "Data Science",
+    "duration": "8 Weeks",
+    "mode": "Hybrid / Remote",
+    "summary": "Work on dataset curation, exploratory analysis, model benchmarking, and technical documentation.",
+    "imageUrl": "",
+    "applyLink": "",
+    "order": "5",
+    "published": "Yes"
+   },
+   {
+    "type": "Workshops",
+    "title": "Building RAG & AI Assistants from Scratch",
+    "domain": "Generative AI",
+    "duration": "2-Day Intensive",
+    "mode": "Hands-On Lab",
+    "summary": "Practical workshop on chunking, embeddings, retrieval quality, and structured outputs.",
+    "imageUrl": "",
+    "applyLink": "",
+    "order": "6",
+    "published": "Yes"
+   },
+   {
+    "type": "Workshops",
+    "title": "Git, GitHub Actions & Custom Domain Deployment",
+    "domain": "DevOps & Web",
+    "duration": "1-Day Intensive",
+    "mode": "Hands-On Lab",
+    "summary": "Automate static site builds with GitHub Actions and connect a custom .com domain cleanly.",
+    "imageUrl": "",
+    "applyLink": "",
+    "order": "7",
+    "published": "Yes"
+   },
+   {
+    "type": "Research",
+    "title": "Multi-Modal & Rubric-Guided Candidate Assessment",
+    "domain": "AI & NLP",
+    "duration": "Ongoing Track",
+    "mode": "R&D Publication",
+    "summary": "Investigating structured skill extraction, semantic alignment, and explainable scoring rubrics.",
+    "imageUrl": "",
+    "applyLink": "",
+    "order": "8",
+    "published": "Yes"
+   },
+   {
+    "type": "Research",
+    "title": "Hybrid Blockchain & Privacy-Preserving Verification",
+    "domain": "Security & Systems",
+    "duration": "Ongoing Track",
+    "mode": "R&D Publication",
+    "summary": "Exploring verifiable credentials, access control models, and integrity checks for sensitive records.",
+    "imageUrl": "",
+    "applyLink": "",
+    "order": "9",
+    "published": "Yes"
+   }
+  ],
+  "services": [
+   {
+    "title": "Custom AI & Machine Learning Solutions",
+    "category": "Enterprise R&D",
+    "deliverable": "Prototype to Deployment Blueprint",
+    "description": "Applied ML, NLP, computer vision, and RAG workflows tailored to domain data, evaluation metrics, and real-world constraints.",
+    "order": "1",
+    "published": "Yes"
+   },
+   {
+    "title": "Full-Stack & Static Web Engineering",
+    "category": "Web & Cloud",
+    "deliverable": "Responsive Production Web Apps",
+    "description": "Modern Next.js, React, and API architectures engineered for speed, maintainability, and clean custom-domain deployment.",
+    "order": "2",
+    "published": "Yes"
+   },
+   {
+    "title": "Academic & Capstone R&D Mentorship",
+    "category": "Academic & Student",
+    "deliverable": "Architecture, Implementation & Documentation",
+    "description": "Structured guidance on problem formulation, baseline vs. proposed system design, experimentation, and technical reporting.",
+    "order": "3",
+    "published": "Yes"
+   },
+   {
+    "title": "Data Pipelines & Spreadsheet/CSV Automation",
+    "category": "Data & Operations",
+    "deliverable": "Structured Datasets & Reporting Workflows",
+    "description": "Standardizing batch trackers, project catalogs, and evaluation sheets into clean JSON/CSV pipelines for effortless publishing.",
+    "order": "4",
+    "published": "Yes"
+   }
+  ],
+  "products": [
+   {
+    "name": "AVR EvalEngine",
+    "tag": "AI Assessment Suite",
+    "summary": "Resume parsing, role-skill alignment, and rubric-based response scoring module for structured technical evaluations.",
+    "highlights": "Skill taxonomy extraction; Role match scoring; JSON/CSV export ready",
+    "imageUrl": "",
+    "order": "1",
+    "published": "Yes"
+   },
+   {
+    "name": "AVR DocPulse",
+    "tag": "Document Intelligence",
+    "summary": "Structured extraction and search toolkit for turning multi-page PDFs, papers, and reports into actionable summaries.",
+    "highlights": "Section-aware chunking; Schema-validated outputs; Fast batch processing",
+    "imageUrl": "",
+    "order": "2",
+    "published": "Yes"
+   },
+   {
+    "name": "AVR StaticShowcase",
+    "tag": "Web Starter Kit",
+    "summary": "Static-first Next.js catalog template with JSON-backed pages, domain filters, and GitHub Actions deployment.",
+    "highlights": "GitHub Pages compatible; Custom .com domain ready; Zero backend cost",
+    "imageUrl": "",
+    "order": "3",
+    "published": "Yes"
+   }
+  ],
+  "portfolio": [
+   {
+    "title": "Automated Technical Screening & Rubric Scoring",
+    "client": "AVR R&D Flagship Lab",
+    "outcome": "Standardized candidate skill extraction and multi-criteria answer evaluation.",
+    "tags": "NLP, Python, Evaluation",
+    "imageUrl": "",
+    "order": "1",
+    "published": "Yes"
+   },
+   {
+    "title": "Multi-Domain Capstone & Research Tracking",
+    "client": "Engineering Cohort & Batch Programs",
+    "outcome": "Organized AI/ML, Web, Data Science, and Security initiatives with clear milestones.",
+    "tags": "R&D, Mentorship, Analytics",
+    "imageUrl": "",
+    "order": "2",
+    "published": "Yes"
+   },
+   {
+    "title": "Static Web Publishing with Custom Domain Support",
+    "client": "AVR Digital Presence",
+    "outcome": "Fast static prerendering with automated GitHub Actions builds on every push.",
+    "tags": "Next.js, GitHub Actions, Static Export",
+    "imageUrl": "",
+    "order": "3",
+    "published": "Yes"
+   }
+  ],
+  "gallery": [
+   {
+    "title": "AVR Research & Development Identity",
+    "caption": "Official brand mark and R&D identity assets.",
+    "tag": "Branding",
+    "imageUrl": "/brand/logo.png",
+    "order": "1",
+    "published": "Yes"
+   },
+   {
+    "title": "AVR Emblem & Mark",
+    "caption": "Compact emblem used across digital channels and documentation.",
+    "tag": "Identity",
+    "imageUrl": "/brand/logo-mark.png",
+    "order": "2",
+    "published": "Yes"
+   },
+   {
+    "title": "R&D Showcase Visual 01",
+    "caption": "Visual asset from AVR project and lab media collection.",
+    "tag": "Lab Media",
+    "imageUrl": "/uploads/601895e7-eb2e-4eb8-8bf9-acc3e00faeeb.webp",
+    "order": "3",
+    "published": "Yes"
+   },
+   {
+    "title": "R&D Showcase Visual 02",
+    "caption": "Engineering & innovation visual showcase.",
+    "tag": "Showcase",
+    "imageUrl": "/uploads/84c6f7d2-9b1a-47da-8911-94c45606c825.webp",
+    "order": "4",
+    "published": "Yes"
+   }
+  ]
+ }
+}

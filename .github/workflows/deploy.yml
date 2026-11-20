@@ -1,15 +1,15 @@
-name: Deploy AVR website
+name: Deploy AVR Static Website
 
-# Rebuilds the site (a) when code is pushed, (b) every 6 hours so edits made in
-# the Google Sheet go live automatically, (c) on demand: Actions tab -> Run workflow.
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+  workflow_dispatch:
+  # Rebuild every 6 hours so the copy of the Google Sheet content that is baked
+  # into the site (fast first paint + search engines) never gets old.
+  # Visitors always see the newest sheet content anyway - it is also fetched live.
   schedule:
     - cron: "0 */6 * * *"
-  workflow_dispatch:
-  repository_dispatch:
-    types: [sheet-updated]
 
 permissions:
   contents: read
@@ -23,57 +23,40 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
 
-      - run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-      # Settings come from  Repo -> Settings -> Secrets and variables -> Actions -> Variables
-      #   SHEET_ID         Google Sheet id (optional: without it the committed JSON is used)
-      #   CUSTOM_DOMAIN    e.g. www.avrresearch.com (optional)
-      #   FORM_ENDPOINT    Formspree / Web3Forms URL for the contact form (optional)
-      - name: Work out site URL and base path
-        env:
-          CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
-        run: |
-          if [ -n "$CUSTOM_DOMAIN" ]; then
-            echo "NEXT_PUBLIC_SITE_URL=https://$CUSTOM_DOMAIN" >> "$GITHUB_ENV"
-            echo "NEXT_PUBLIC_BASE_PATH=" >> "$GITHUB_ENV"
-          else
-            REPO="${GITHUB_REPOSITORY#*/}"
-            echo "NEXT_PUBLIC_SITE_URL=https://${GITHUB_REPOSITORY_OWNER}.github.io/${REPO}" >> "$GITHUB_ENV"
-            echo "NEXT_PUBLIC_BASE_PATH=/${REPO}" >> "$GITHUB_ENV"
-          fi
-
-      - name: Sync content from Google Sheets
-        env:
-          SHEET_ID: ${{ vars.SHEET_ID }}
-        run: node scripts/sync-sheets.mjs
-
-      - name: Build static site
-        env:
-          NEXT_PUBLIC_FORM_ENDPOINT: ${{ vars.FORM_ENDPOINT }}
+      - name: Build static website
         run: npm run build
+        env:
+          # Web app URL of the Google Apps Script (repo > Settings > Secrets and variables > Actions > Variables > CMS_URL)
+          NEXT_PUBLIC_CMS_URL: ${{ vars.CMS_URL }}
 
-      - name: Attach custom domain
-        if: ${{ vars.CUSTOM_DOMAIN != '' }}
-        run: echo "${{ vars.CUSTOM_DOMAIN }}" > out/CNAME
-
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload static files
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4

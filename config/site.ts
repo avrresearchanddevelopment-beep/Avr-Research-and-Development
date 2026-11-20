@@ -2,28 +2,13 @@
  * Organization / company details shown across the public site
  * (header contact bar, footer, contact page, structured metadata, etc).
  *
- * Static config - edit here and push to redeploy.
+ * NOTE: the live values now come from the "Settings" tab of the Google Sheet
+ * (see lib/useCms.ts). This file is only the fallback / default.
  */
 
-export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
-/** Prefix a root-relative path (e.g. "/gallery/a.webp") with the base path.
- *  Absolute URLs (https://...) are returned untouched. */
-export function withBase(src: string): string {
-  if (!src || /^(https?:)?\/\//i.test(src) || src.startsWith("data:")) return src;
-  const clean = src.startsWith("/") ? src : `/${src}`;
-  return `${basePath}${clean}`;
-}
+import { BASE_PATH as basePath } from "@/config/cms";
 
 export const siteConfig = {
-  // Public site URL (used by sitemap/robots). Set NEXT_PUBLIC_SITE_URL in the
-  // GitHub Action to https://your-domain.com
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, ""),
-
-  // Contact form backend (Formspree / Web3Forms / Google Apps Script URL).
-  // If empty, the form falls back to opening the visitor's email app.
-  formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "",
-
   name: "AVR Research & Development Pvt. Ltd.",
   shortName: "AVR",
   tagline: "A single home for our services, our work, and the people we work with.",

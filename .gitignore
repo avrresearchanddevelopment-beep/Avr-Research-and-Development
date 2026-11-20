@@ -1,18 +1,48 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # dependencies
 /node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# next.js build output
+# testing
+/coverage
+
+# next.js
 /.next/
 /out/
-next-env.d.ts
-*.tsbuildinfo
 
-# secrets / local env
-.env*
-!.env.example
+# production
+/build
 
 # misc
 .DS_Store
 *.pem
+
+# debug
 npm-debug.log*
-*.zip
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# uploaded files (local dev storage)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# old database-era files (contain user records / password hashes) - never commit
+/legacy/

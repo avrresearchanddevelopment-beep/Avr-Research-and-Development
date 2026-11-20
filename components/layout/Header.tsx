@@ -1,46 +1,37 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import { siteConfig } from "@/config/site";
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
-  { href: "/services", label: "Services" },
-  { href: "/products", label: "Products" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/gallery", label: "Gallery" },
-];
-
-const programLinks = [
-  { href: "/training", label: "Training" },
-  { href: "/internships", label: "Internships" },
-  { href: "/workshops", label: "Workshops" },
-  { href: "/research", label: "Research" },
-];
-
-const trailingLinks = [{ href: "/faq", label: "FAQ" }];
+import { assetUrl, telHref } from "@/lib/cms";
+import { useCms } from "@/lib/useCms";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const { cms, s } = useCms();
+
+  // Menu, contact bar, logo and button text all come from the Google Sheet
+  // (tabs: Navigation and Settings).
+  const navLinks = cms.navigation.map((n) => ({ href: n.path, label: n.label }));
+  const mobile = s("mobile_1", siteConfig.contactBar.mobile);
+  const landline = s("landline", siteConfig.contactBar.landline);
+  const email = s("email", siteConfig.contactBar.email);
+  const logo = assetUrl(s("logo_url")) || siteConfig.logo;
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-line bg-white">
       <div className="hidden border-b border-steel-dim bg-steel px-4 py-2 sm:px-6 md:block lg:px-8">
         <div className="mx-auto flex max-w-7xl items-center justify-between text-xs text-paper">
           <div className="flex gap-6">
-            <a href={siteConfig.contactBar.mobileHref} className="transition-colors hover:text-paper/70">
-              Mobile: {siteConfig.contactBar.mobile}
+            <a href={telHref(mobile)} className="transition-colors hover:text-paper/70">
+              Mobile: {mobile}
             </a>
-            <a href={siteConfig.contactBar.landlineHref} className="transition-colors hover:text-paper/70">
-              Landline: {siteConfig.contactBar.landline}
+            <a href={telHref(landline)} className="transition-colors hover:text-paper/70">
+              Landline: {landline}
             </a>
           </div>
-          <a href={siteConfig.contactBar.emailHref} className="transition-colors hover:text-paper/70">
-            {siteConfig.contactBar.email}
+          <a href={`mailto:${email}`} className="transition-colors hover:text-paper/70">
+            {email}
           </a>
         </div>
       </div>
@@ -56,12 +47,12 @@ export function Header() {
           */}
           <Link href="/" className="flex items-center group ml-2 sm:ml-4" onClick={() => setOpen(false)}>
             <span className="flex items-center transition-transform duration-300 group-hover:scale-105">
-              <Image
-                src={siteConfig.logo}
-                alt={siteConfig.name}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={logo}
+                alt={s("site_name", siteConfig.name)}
                 width={1523}
                 height={666}
-                priority
                 className="h-12 sm:h-14 w-auto object-contain scale-110"
               />
             </span>
@@ -73,40 +64,14 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-
-            {/* Programs dropdown - opens on hover or keyboard focus */}
-            <div className="group relative">
-              <button
-                type="button"
-                aria-haspopup="true"
-                className="flex items-center gap-1 transition-colors hover:text-brass focus-visible:text-brass"
-              >
-                Programs <span aria-hidden className="text-[10px]">▾</span>
-              </button>
-              <ul className="invisible absolute left-0 top-full z-50 w-44 rounded-lg border border-line bg-white py-2 opacity-0 shadow-lg transition-all group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
-                {programLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href} className="block px-4 py-2 hover:bg-paper-deep hover:text-brass">
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {trailingLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="hover:text-brass transition-colors">
-                {link.label}
-              </Link>
-            ))}
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
             <Link
               href="/contact"
-              className="text-sm font-bold bg-brass text-paper px-5 py-2 rounded-full hover:bg-brass-dim transition-all shadow-sm"
+              className="text-sm font-bold bg-brass text-paper px-4 py-2 rounded-full hover:bg-brass-dim transition-all shadow-[0_0_15px_rgba(138,85,48,0.3)]"
             >
-              Contact Us
+              {s("cta_label", "Enquire")}
             </Link>
           </div>
 
@@ -134,7 +99,7 @@ export function Header() {
       {open && (
         <nav className="border-t border-line bg-paper px-4 py-4 lg:hidden">
           <ul className="flex flex-col gap-4">
-            {[...navLinks, ...programLinks, ...trailingLinks, { href: "/contact", label: "Contact Us" }].map((link) => (
+            {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
@@ -151,14 +116,14 @@ export function Header() {
               small tablets this is the only place to find phone/email/
               hours — without it that info would be unreachable below lg. */}
           <div className="mt-6 flex flex-col gap-2 border-t border-line pt-4 text-xs text-slate">
-            <a href={siteConfig.contactBar.mobileHref} className="transition-colors hover:text-brass">
-              Mobile: {siteConfig.contactBar.mobile}
+            <a href={telHref(mobile)} className="transition-colors hover:text-brass">
+              Mobile: {mobile}
             </a>
-            <a href={siteConfig.contactBar.landlineHref} className="transition-colors hover:text-brass">
-              Landline: {siteConfig.contactBar.landline}
+            <a href={telHref(landline)} className="transition-colors hover:text-brass">
+              Landline: {landline}
             </a>
-            <a href={siteConfig.contactBar.emailHref} className="transition-colors hover:text-brass">
-              {siteConfig.contactBar.email}
+            <a href={`mailto:${email}`} className="transition-colors hover:text-brass">
+              {email}
             </a>
           </div>
         </nav>

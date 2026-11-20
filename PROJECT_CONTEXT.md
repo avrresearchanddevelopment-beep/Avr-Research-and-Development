@@ -1,39 +1,28 @@
-# AVR Website — Project Context
+# AVR Platform - Project Context (v4: Google Sheets as the admin panel)
 
-Read this first in every new session. Keep it updated as decisions are made.
+Read this first in every new session.
 
 ## What this is
-Marketing + catalog website for **AVR Research & Development Pvt. Ltd.** (Hyderabad).
-**Fully static** — hosted on GitHub Pages with a custom domain. The earlier version had a
-backend (Prisma/PostgreSQL, JWT auth, student/client/admin portals); that was **intentionally
-removed**. Do not reintroduce a server, database, auth or `/api` routes.
+Static Next.js 16 site (`output: "export"`) hosted on GitHub Pages under `/AVR_ORG`.
+There is **no database and no server**. Everything an admin can change lives in one Google Sheet:
 
-## Architecture
-* Next.js 16 (App Router, `output: "export"`, `trailingSlash: true`) + React 19 + TypeScript + Tailwind v4.
-* **Content lives in a Google Sheet** → `scripts/sync-sheets.mjs` → `public/data/*.json` → pages import via `lib/data.ts`.
-* Deploy: `.github/workflows/deploy.yml` (push to `main`, every 6 h, manual, or `repository_dispatch: sheet-updated`).
-* Config via GitHub Actions **Variables**: `SHEET_ID`, `CUSTOM_DOMAIN`, `FORM_ENDPOINT`.
-* `NEXT_PUBLIC_BASE_PATH` is empty for a custom domain; the workflow sets it to `/<repo>` only when no `CUSTOM_DOMAIN`.
-  Use `withBase()` from `config/site.ts` for any plain `<img>` / raw root-relative path.
+    Google Sheet (admin edits)  ->  Apps Script web app (apps-script/Code.gs)  ->  website (browser fetch)
 
-## Pages (all static)
-`/` Home · `/about` · `/projects` (search + auto-built domain/level filters) · `/services` · `/products` ·
-`/portfolio` · `/gallery` · `/training` `/internships` `/workshops` `/research` (from the `Programs` tab) ·
-`/contact` (form → `FORM_ENDPOINT`, else mailto fallback; accepts `?subject=`) · `/faq` · `/privacy-policy` · `/terms-of-service`
+- Reads: `lib/cms.ts` + `lib/useCms.ts`. First paint uses `data/cms-snapshot.json` (refreshed at build by
+  `scripts/pull-cms.mjs`), then the live JSON is fetched from `NEXT_PUBLIC_CMS_URL` and swapped in.
+- Writes: only the contact form (`components/public/ContactForm.tsx`) -> POST to the same Apps Script -> private `Messages` tab.
+- Sheet tabs: Settings, Navigation, Highlights, About, FAQ, Domains, Projects, Programs, Services, Products,
+  Portfolio, Gallery (public) + Messages (private). The template workbook is `AVR_Site_CMS.xlsx`.
+- Column headers are camelCased by the script ("Image URL" -> `imageUrl`). Renaming a header or tab breaks that page.
+- Only rows with Published = Yes (Navigation: Show = Yes) are sent, sorted by Order.
 
-## Rules for future work
-1. New content type = add a tab mapper in `scripts/sync-sheets.mjs`, a type in `lib/data.ts`, a template CSV in `sheet-templates/`.
-2. Sync must stay non-destructive: a bad/missing tab keeps the previous JSON.
-3. No `localStorage` secrets, no server code, no `next/image` optimization (static export).
-4. `public/data/*.json` is a committed **fallback snapshot**; the live values come from the sheet at build time.
-5. Never commit `.env*` or credentials.
+## Not available (by design)
+Student/client login, per-user enrollments, admin dashboard UI, file uploads. These needed the old database
+(see `legacy/`, which is git-ignored). Enquiries go to the Messages tab; programme cards can link to a Google Form via "Apply Link".
 
-## Reference info (old site)
-Address: F5, Ruby Apartments, Opp Maitri Vanam, Pillar No-1464, Hyderabad · Hours Mon–Sat 9:30–7:00.
-Contact numbers/emails are in `config/site.ts`.
+## Setup / deploy
+See `SETUP_GOOGLE_SHEETS.md`. Repo variable `CMS_URL` must be set or the contact form shows "not connected".
 
-## Status
-**Done:** static export, Sheets sync (6 tabs), GitHub Pages workflow + custom domain, contact form (static),
-cleanup of all backend code, legal pages, SEO metadata/sitemap/robots.
-**Ideas / next:** per-project detail pages (`/projects/[slug]`), Apps Script “Publish” button in the sheet,
-home-page featured-projects strip, Google Analytics/Plausible, real social links in `config/site.ts`.
+## Dev
+`npm ci && npm run dev` (add `.env.local` with `NEXT_PUBLIC_CMS_URL=...`, and `NEXT_PUBLIC_BASE_PATH=` for root hosting).
+`npm run build` needs internet (Google Fonts).

@@ -1,14 +1,14 @@
 {
-  "name": "avr-website",
+  "name": "avr-platform",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
-    "sync": "node scripts/sync-sheets.mjs",
+    "prebuild": "node scripts/pull-cms.mjs",
     "build": "next build",
-    "build:live": "node scripts/sync-sheets.mjs && next build",
-    "typecheck": "next typegen && tsc --noEmit",
-    "lint": "eslint"
+    "start": "next start",
+    "lint": "eslint",
+    "pull-cms": "node scripts/pull-cms.mjs"
   },
   "dependencies": {
     "next": "16.3.4",
