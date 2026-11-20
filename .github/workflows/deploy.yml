@@ -1,4 +1,4 @@
-name: Deploy AVR Static Website
+﻿name: Deploy AVR Static Website
 
 on:
   push:
