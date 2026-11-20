@@ -17,9 +17,8 @@ export function Footer() {
   const mobiles = [s("mobile_1"), s("mobile_2")].filter(Boolean);
   const email = s("email", siteConfig.contactBar.email);
   const logo = assetUrl(s("logo_url")) || siteConfig.logo;
-  const whatsappUrl = s("whatsapp_url") || "https://wa.me/917997129566";
-  const instagramUrl = s("instagram_url") || "https://instagram.com";
-  const linkedinUrl = s("linkedin_url") || "https://linkedin.com";
+  const whatsappUrl = s("whatsapp_url") || "https://wa.me/917997129566";  const instagramUrl = s("instagram_url") || "https://www.instagram.com/avr_academic_projects?dmpr=MXJhY2lyOXVtdTJuNw==";  const linkedinUrl = s("linkedin_url") || "https://www.linkedin.com/in/avr-research-and-development-undefined-00a71a375/";
+  const youtubeUrl = s("youtube_url") || "https://www.youtube.com/@AVR_Projects";
   const emailAddr = s("email") || "avr@avrresearchanddevelopment.com";
   const name = s("site_name", siteConfig.name);
   const privacy = s("privacy_url");
@@ -83,6 +82,17 @@ export function Footer() {
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                </svg>
+              </a>
+              <a
+                href={youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/80 transition hover:border-red-500 hover:bg-red-500/15 hover:text-red-500"
+              >
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 00.5 6.19 31.6 31.6 0 000 12a31.6 31.6 0 00.5 5.81 3.02 3.02 0 002.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 002.12-2.14A31.6 31.6 0 0024 12a31.6 31.6 0 00-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
                 </svg>
               </a>
             </div>
