@@ -1,6 +1,7 @@
 "use client";
 
 import { useCms } from "@/lib/useCms";
+import { assetUrl, telHref } from "@/lib/cms";
 
 export default function AboutPage() {
   const { cms, s } = useCms();
@@ -29,6 +30,35 @@ export default function AboutPage() {
             ))}
           </ul>
         )}
+      </div>
+
+      {/* Leadership ? MD & CEO */}
+      <div className="mt-16 card card-accent !p-0 overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-12 items-center">
+          <div className="md:col-span-4 h-72 sm:h-80 md:h-full bg-black/5">
+            <img
+              src={assetUrl("/team/ceo.jpg")}
+              alt="Annapureddy Naresh - Managing Director & CEO"
+              className="h-full w-full object-cover object-top"
+            />
+          </div>
+          <div className="md:col-span-8 p-6 sm:p-8 md:p-10">
+            <p className="text-xs font-semibold uppercase tracking-widest text-brass-dim">
+              Leadership
+            </p>
+            <h2 className="mt-2 font-display text-2xl text-ink md:text-3xl">
+              Annapureddy Naresh
+            </h2>
+            <p className="mt-1 text-sm font-semibold text-brass-dim">
+              Managing Director &amp; Chief Executive Officer
+            </p>
+            <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate">
+              Leading AVR Research &amp; Development Pvt. Ltd. with a focus on applied AI,
+              embedded engineering, and practical R&amp;D mentorship that bridges academic
+              innovation with real-world industry deployment.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
